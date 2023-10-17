@@ -185,7 +185,7 @@
                   </button>
                 </div>
                 <div class="modal-body">
-                    <img src="" alt="/assets/images/mad-2023-et00370942-1695798072.webp">
+                    <img src="assets/images/mad-2023-et00370942-1695798072.webp" alt="Mad Image">
                     <p class="card-text">Comedy/Drama</p>
                     <p>The story follows three college freshmen, Manoj, Ashok, and Damodhar, as they become best friends, navigate college experiences, and ultimately find their true love.</p>
                 </div>
