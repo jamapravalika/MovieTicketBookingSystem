@@ -6,12 +6,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/swiper.min.css">
 
-	<link rel="stylesheet" type="text/css" href="assets/css/style-starter.css">
 	<link href="//fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,600&display=swap"
 		rel="stylesheet">
 <!-- <link rel="stylesheet" href="css/ContactForm.css"> -->
+<link rel="stylesheet" href="assets/css/Header.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 <style>
 
 .container form {
@@ -90,52 +91,61 @@ form button{
 <body>
 
 	<!-- header -->
-	<header id="site-header" class="w3l-header fixed-top">
-		<!--/nav-->
-		<nav class="navbar navbar-expand-lg navbar-light fill px-lg-0 py-0 px-3">
-			<div class="container">
-				<h1><a class="navbar-brand" href="Home.html"><span class="fa fa-play icon-log"
-							aria-hidden="true"></span>
-						Movie Ticket </a></h1>
-				<button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
-					data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-					aria-label="Toggle navigation">
-					<!-- <span class="navbar-toggler-icon"></span> -->
-					<span class="fa icon-expand fa-bars"></span>
-					<span class="fa icon-close fa-times"></span>
-				</button>
+	<nav class="navbar navbar-expand-sm custom-navbar" style="background-color: maroon;">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="javascript:void(0)"><i class="fa-solid fa-film"></i> MovieTicket</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <br>
+    <div class="collapse navbar-collapse" id="mynavbar">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="Home.jsp"><i class="fas fa-home"></i> Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Movies.jsp"><i class="fa-solid fa-video"></i> Movies</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="About.html"><i class="fas fa-book"></i> About</a>
+      </li>
+        <li class="nav-item">
+          <a class="nav-link" href="ContactForm.jsp"><i class="fas fa-envelope"></i> Contact</a>
+        </li>
+        
+      
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"><i class="fas fa-user"></i> Account</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Account</a></li>
+            <li><a class="dropdown-item" href="#">History</a></li>
+            <li><a class="dropdown-item" href="login.jsp">Logout</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="text" placeholder="Search">
+        <i class="fas fa-search"></i>
+      </form>
+    </div>
+  </div>
+</nav>
+   
+   
 
-				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-					<ul class="navbar-nav ml-auto">
-						<li class="nav-item">
-							<a class="nav-link" href="index.jsp">Home</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="Movies.jsp">movies</a>
-						</li>
-
-						<li class="nav-item">
-							<a class="nav-link" href="About.html">About</a>
-						</li>
-
-						<li class="nav-item active">
-							<a class="nav-link" href="ContactForm.jsp">Contact</a>
-						</li>
-					</ul>
-
-					<!--/search-right-->
-					<!--/search-right-->
+<!-- 					/search-right
+					/search-right
 
 					<div class="Login_SignUp" id="login"
 						style="font-size: 2rem ; display: inline-block; position: relative;">
-						<!-- <li class="nav-item"> -->
+						<li class="nav-item">
 						<a class="nav-link" href="login.jsp"><i class="fa fa-user-circle-o"></i></a>
-						<!-- </li> -->
+						</li>
 					</div>
 				</div>
 				
 				
-				<!-- toggle switch for light and dark theme -->
+				toggle switch for light and dark theme
 				<div class="mobile-position">
 					<nav class="navigation">
 						<div class="theme-switch-wrapper">
@@ -152,14 +162,14 @@ form button{
 			</div>
 		</nav>
 	</header>
-	<!--/breadcrumbs -->
+	/breadcrumbs
 	<div class="w3l-breadcrumbs">
 		<nav id="breadcrumbs" class="breadcrumbs">
 			<div class="container page-wrapper">
 				<a href="index.jsp">Home</a> » <span class="breadcrumb_last" aria-current="page">Contact</span>
 			</div>
 		</nav>
-	</div>
+	</div> -->
 
     <div class="container" id="con"> 
         <form onsubmit="SendEmail(); reset(); return false;">

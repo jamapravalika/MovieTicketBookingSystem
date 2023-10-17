@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
   <link rel="stylesheet" href="assets/css/movies.css">
   <link rel="stylesheet" href="assets/css/Header.css">
     <title>Movies</title>
@@ -28,18 +31,17 @@
     <div class="collapse navbar-collapse" id="mynavbar">
       <ul class="navbar-nav me-auto">
         <li class="nav-item">
-          <a class="nav-link" href="index.jsp"><i class="fas fa-home"></i> Home</a>
+          <a class="nav-link" href="Home.jsp"><i class="fas fa-home"></i> Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="Movies.jsp"><i class="fa-solid fa-video"></i> Movies</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href=""><i class="fas fa-envelope"></i> Contact</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href=""><i class="fas fa-book"></i> About</a>
+          <a class="nav-link" href="About.html"><i class="fas fa-book"></i> About</a>
       </li>
-      
+      <li class="nav-item">
+          <a class="nav-link" href="ContactForm.jsp"><i class="fas fa-envelope"></i> Contact</a>
+        </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"><i class="fas fa-user"></i> Account</a>
           <ul class="dropdown-menu">
@@ -183,7 +185,7 @@
                   </button>
                 </div>
                 <div class="modal-body">
-                    <img src="" alt="../assets/images/mad-2023-et00370942-1695798072.webp">
+                    <img src="" alt="/assets/images/mad-2023-et00370942-1695798072.webp">
                     <p class="card-text">Comedy/Drama</p>
                     <p>The story follows three college freshmen, Manoj, Ashok, and Damodhar, as they become best friends, navigate college experiences, and ultimately find their true love.</p>
                 </div>

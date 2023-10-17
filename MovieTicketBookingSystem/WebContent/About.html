@@ -7,59 +7,176 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>About</title>
 
-	<link rel="stylesheet" type="text/css" href="assets/css/swiper.min.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/style-starter.css">
 	<link href="//fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,600&display=swap"
 		rel="stylesheet">
- 
+		
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+ <link rel="stylesheet" href="assets/css/Header.css">
+ <style>
+/* Reset some default styles */
+body, h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set a global font family and background color for the page */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* Style the header/navigation bar */
+.custom-navbar {
+    background-color: maroon;
+    color: white;
+    padding: 10px 0;
+}
+
+.navbar-brand {
+    font-size: 24px;
+}
+
+.navbar-toggler-icon {
+    background-color: white;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    margin-right: 20px;
+    font-size: 16px;
+}
+
+/* Style the main heading */
+h1 {
+    margin-top: 4%;
+    font-size: 36px;
+    color: maroon;
+}
+
+/* Style the container for the main content */
+.container {
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Style the images in the content */
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Style the "Read More" button */
+.read-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: maroon;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+/* Style the statistics section */
+.w3l-counter-stats-info {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.counter_grid {
+    padding: 20px;
+}
+
+.icon_info {
+    font-size: 24px;
+}
+
+/* Style the testimonials section */
+.testimonial-content {
+    text-align: center;
+    margin-top: 30px;
+}
+
+testi-des {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.testimonial blockquote {
+    font-size: 18px;
+    color: maroon;
+}
+
+.test-img img {
+    border-radius: 50%;
+    max-width: 100px;
+    height: auto;
+}
+
+.peopl {
+    margin-top: 10px;
+}
+
+/* Style the footer section */
+.w3l-footer {
+    background-color: maroon;
+    color: white;
+    padding: 30px 0;
+}
+
+/* Additional styles for the footer and social icons can be added here */
+
+/* Style the "Go to top" button */
+#movetop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: maroon;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+}
+
+/* Style the carousel section */
+.carousel {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border-radius: 5px;
+}
+
+/* Add more CSS rules as needed to style other sections of your page */
+
+ </style>
 </head>
 
 <body>
-	<!-- header -->
-	<header id="site-header" class="w3l-header fixed-top">
-		<!--/nav-->
-		<nav class="navbar navbar-expand-lg navbar-light fill px-lg-0 py-0 px-3">
-			<div class="container">
-				<h1><a class="navbar-brand" href="index.jsp"><span class="fa fa-play icon-log"
-							aria-hidden="true"></span>
-						Movie Ticket </a></h1>
-				<button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
-					data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-					aria-label="Toggle navigation">
-					<!-- <span class="navbar-toggler-icon"></span> -->
-					<span class="fa icon-expand fa-bars"></span>
-					<span class="fa icon-close fa-times"></span>
-				</button>
+<iframe src="Header.html" frameborder="0" style="width: 100%;"></iframe>
 
-				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-					<ul class="navbar-nav ml-auto">
-						<li class="nav-item">
-							<a class="nav-link" href="index.jsp">Home</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="Movies.jsp">Movies</a>
-						</li>
 
-						<li class="nav-item active">
-							<a class="nav-link" href="About.html">About</a>
-						</li>
-
-						<li class="nav-item">
-							<a class="nav-link" href="ContactForm.jsp">Contact</a>
-						</li>
-					</ul>
-
-					<!--/search-right-->
-					<!--/search-right-->
+<!-- 					/search-right
+					/search-right
 
 					<div class="Login_SignUp" id="login"
 						style="font-size: 2rem ; display: inline-block; position: relative;">
-						<!-- <li class="nav-item"> -->
+						<li class="nav-item">
 						<a class="nav-link" href="login.jsp"><i class="fa fa-user-circle-o"></i></a>
-						<!-- </li> -->
+						</li>
 					</div>
 				</div>
-				<!-- toggle switch for light and dark theme -->
+				toggle switch for light and dark theme
 				<div class="mobile-position">
 					<nav class="navigation">
 						<div class="theme-switch-wrapper">
@@ -76,7 +193,7 @@
 			</div>
 		</nav>
 	</header>
-	<!--/breadcrumbs -->
+	/breadcrumbs
 	<div class="w3l-breadcrumbs">
 		<nav id="breadcrumbs" class="breadcrumbs">
 			<div class="container page-wrapper">
@@ -84,7 +201,7 @@
 			</div>
 		</nav>
 	</div>
-	<!-- /about-->
+	/about -->
 	<div class="w3l-ab-grids py-5">
 
 		<div class="container py-lg-4">

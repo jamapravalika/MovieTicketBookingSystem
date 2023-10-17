@@ -41,6 +41,7 @@
     .show{
         display: flex;
         margin: 5%;
+        padding-left:5%;
     }
     .show h6{
         color: crimson;
