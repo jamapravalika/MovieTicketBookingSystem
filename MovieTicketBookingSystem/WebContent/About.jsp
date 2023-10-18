@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="zxx">
 
@@ -6,201 +7,26 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>About</title>
 
-	<link href="//fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,600&display=swap"
-		rel="stylesheet">
-		
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
- <link rel="stylesheet" href="assets/css/Header.css">
- <link rel="stylesheet" href="assets/css/About.css">
- <link rel="stylesheet" type="text/css" href="assets/css/swiper.min.css">
- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
- 
- <style>
-body, h1, h2, h3, h4, h5, h6, p {
-    margin: 0;
-    padding: 0;
-}
+	 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/css/Header.css">
+    <link rel="stylesheet" href="assets/css/About.css">
 
-body {
-    font-family: 'Open Sans', sans-serif;
-    background-color: #f0f0f0;
-}
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/1.9.3/countUp.min.js"></script>
 
-.custom-navbar {
-    background-color: maroon;
-    color: white;
-    padding: 10px 0;
-}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/2.0.7/countUp.min.js"></script>
 
-.navbar-brand {
-    font-size: 24px;
-}
-
-.navbar-toggler-icon {
-    background-color: white;
-}
-
-.navbar-nav .nav-link {
-    color: white;
-    margin-right: 20px;
-    font-size: 16px;
-}
-
-h1 {
-    margin-top: 4%;
-    font-size: 36px;
-    color: maroon;
-}
-
-/* Style the container for the main content */
-.container {
-    padding: 20px;
-    background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    margin-top: 20px;
-}
-
-/* Style the images in the content */
-.img-fluid {
-    max-width: 100%;
-    height: auto;
-}
-
-/* Style the "Read More" button */
-.read-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: maroon;
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    border-radius: 5px;
-    margin-top: 20px;
-}
-
-/* Style the statistics section */
-.w3l-counter-stats-info {
-    margin-top: 30px;
-    text-align: center;
-}
-
-.counter_grid {
-    padding: 20px;
-}
-
-.icon_info {
-    font-size: 24px;
-}
-
-/* Style the testimonials section */
-.testimonial-content {
-    text-align: center;
-    margin-top: 30px;
-}
-
-testi-des {
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 10px;
-    margin-top: 20px;
-}
-
-.testimonial blockquote {
-    font-size: 18px;
-    color: maroon;
-}
-
-.test-img img {
-    border-radius: 50%;
-    max-width: 100px;
-    height: auto;
-}
-
-.peopl {
-    margin-top: 10px;
-}
-
-/* Style the footer section */
-.w3l-footer {
-    background-color: maroon;
-    color: white;
-    padding: 30px 0;
-}
-
-/* Additional styles for the footer and social icons can be added here */
-
-/* Style the "Go to top" button */
-#movetop {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: maroon;
-    color: white;
-    padding: 10px 15px;
-    border-radius: 50%;
-    cursor: pointer;
-    display: none;
-}
-
-/* Style the carousel section */
-.carousel {
-    background-color: white;
-    border-radius: 10px;
-    padding: 20px;
-}
-
-.carousel-caption {
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border-radius: 5px;
-}
-
-/* Add more CSS rules as needed to style other sections of your page */
-
- </style>
 </head>
 
 <body>
-<header><jsp:include page = "Header.jsp"/></header>
-
-
-<!-- 					/search-right
-					/search-right
-
-					<div class="Login_SignUp" id="login"
-						style="font-size: 2rem ; display: inline-block; position: relative;">
-						<li class="nav-item">
-						<a class="nav-link" href="login.jsp"><i class="fa fa-user-circle-o"></i></a>
-						</li>
-					</div>
-				</div>
-				toggle switch for light and dark theme
-				<div class="mobile-position">
-					<nav class="navigation">
-						<div class="theme-switch-wrapper">
-							<label class="theme-switch" for="checkbox">
-								<input type="checkbox" id="checkbox">
-								<div class="mode-container">
-									<i class="gg-sun"></i>
-									<i class="gg-moon"></i>
-								</div>
-							</label>
-						</div>
-					</nav>
-				</div>
-			</div>
-		</nav>
-	</header>
-	/breadcrumbs
-	<div class="w3l-breadcrumbs">
-		<nav id="breadcrumbs" class="breadcrumbs">
-			<div class="container page-wrapper">
-				<a href="index.jsp">Home</a> » <span class="breadcrumb_last" aria-current="page">About</span>
-			</div>
-		</nav>
-	</div>
-	/about -->
+<%@ include file="Header.jsp" %>
 	<div class="w3l-ab-grids py-5">
 		<div class="container py-lg-4">
 			<div class="row ab-grids-sec align-items-center" style="display: flex;">
@@ -210,60 +36,13 @@ testi-des {
 				<div class="col-lg-6 ab-left pl-lg-4 mt-lg-0 mt-5">
 					<h3 class="hny-title">Movie Ticket Reservation System</h3>
 					<p class="mt-3">It is an online ticket booking platform to book tickets for movies playing in theaters near you to buy tickets for movies released today at your desired location. You can book movie tickets by searching for movies or movie tickets in the product search bar or clicking Movies & Travel tickets option.</p>
-					<div class="ready-more mt-4">
-						<a href="#" class="btn read-button">Read More <span class="fa fa-angle-double-right ml-2"
-								aria-hidden="true"></span></a>
-					</div>
 				</div>
 			</div>
-
-			<div class="w3l-counter-stats-info text-center" style="display: flex;">
-				<div class="stats_left">
-					<div class="counter_grid">
-						<div class="icon_info">
-							<p class="counter">65</p>
-							<h4>Movies</h4>
-
-						</div>
-					</div>
-				</div>
-				<div class="stats_left">
-					<div class="counter_grid">
-						<div class="icon_info">
-							<p class="counter">165</p>
-							<h4>Shows</h4>
-
-						</div>
-					</div>
-				</div>
-				<div class="stats_left">
-					<div class="counter_grid">
-						<div class="icon_info">
-							<p class="counter">463</p>
-							<h4>Staff Members</h4>
-
-						</div>
-					</div>
-				</div>
-				<div class="stats_left">
-					<div class="counter_grid">
-						<div class="icon_info">
-							<p class="counter">5063</p>
-							<h4>No. of Users</h4>
-
-						</div>
-					</div>
-				</div>
-			</div>
-
 		</div>
 	</div>
 	
 	<!-- **************** -->
 
-<!-- ******************** -->
-
-	<!-- Add Pagination -->
 	<div class="swiper-pagination"></div>
 </div>
 	<section class="w3l-clients" id="clients">
@@ -393,109 +172,12 @@ testi-des {
 		</div>
 	</section>
 
-
-	<footer class="w3l-footer">
-		<section class="footer-inner-main">
-			<div class="footer-hny-grids py-5">
-				<div class="container py-lg-4">
-					<div class="text-txt">
-						<div class="right-side">
-							<div class="row footer-about">
-								<div class="col-md-3 col-6 footer-img mb-lg-0 mb-4">
-									<a href="movies.html"><img class="img-fluid" src="assets/images/banner1.jpg"
-											alt=""></a>
-								</div>
-								<div class="col-md-3 col-6 footer-img mb-lg-0 mb-4">
-									<a href="movies.html"><img class="img-fluid" src="assets/images/banner2.jpg"
-											alt=""></a>
-								</div>
-								<div class="col-md-3 col-6 footer-img mb-lg-0 mb-4">
-									<a href="movies.html"><img class="img-fluid" src="assets/images/banner3.jpeg"
-											alt=""></a>
-								</div>
-								<div class="col-md-3 col-6 footer-img mb-lg-0 mb-4">
-									<a href="movies.html"><img class="img-fluid" src="assets/images/banner4.jpg"
-											alt=""></a>
-								</div>
-							</div>
-							<div class="row footer-links">
-
-
-								<div class="col-md-3 col-sm-6 sub-two-right mt-5">
-									<h6>Movies</h6>
-									<ul>
-										<li><a href="#">Movies</a></li>
-										<li><a href="#">Videos</a></li>
-										<li><a href="#">English Movies</a></li>
-										<li><a href="#">Tailor</a></li>
-										<li><a href="#">Upcoming Movies</a></li>
-										<li><a href="ContactForm.jsp">Contact Us</a></li>
-									</ul>
-								</div>
-								<div class="col-md-3 col-sm-6 sub-two-right mt-5">
-									<h6>Information</h6>
-									<ul>
-										<li><a href="Home.html">Home</a> </li>
-										<li><a href="about.html">About</a> </li>
-										<li><a href="#">Tv Series</a> </li>
-										<li><a href="#">Blogs</a> </li>
-										<li><a href="sign_in.html">Login</a></li>
-										<li><a href="ContactForm.jsp">Contact</a></li>
-									</ul>
-								</div>
-								<div class="col-md-3 col-sm-6 sub-two-right mt-5">
-									<h6>Locations</h6>
-									<ul>
-										<li><a href="movies.html">Asia</a></li>
-										<li><a href="movies.html">France</a></li>
-										<li><a href="movies.html">Taiwan</a></li>
-										<li><a href="movies.html">United States</a></li>
-										<li><a href="movies.html">Korea</a></li>
-										<li><a href="movies.html">United Kingdom</a></li>
-									</ul>
-								</div>
-								<div class="col-md-3 col-sm-6 sub-two-right mt-5">
-									<h6>Newsletter</h6>
-									<form action="#" class="subscribe mb-3" method="post">
-										<input type="email" name="email" placeholder="Your Email Address" required="">
-										<button><span class="fa fa-envelope-o"></span></button>
-									</form>
-									<p>Enter your email and receive the latest news, updates and special offers from us.
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			</div>
-			<div class="below-section">
-				<div class="container">
-					<div class="copyright-footer">
-						<div class="columns text-lg-left">
-							 <p>&copy; 2023 Movie Ticket. All rights reserved</p>
-						</div>
-
-						<ul class="social text-lg-right">
-							<li><a href="#facebook"><span class="fa fa-facebook" aria-hidden="true"></span></a>
-							</li>
-							<li><a href="#linkedin"><span class="fa fa-linkedin" aria-hidden="true"></span></a>
-							</li>
-							<li><a href="#twitter"><span class="fa fa-twitter" aria-hidden="true"></span></a>
-							</li>
-							<li><a href="#google"><span class="fa fa-google-plus" aria-hidden="true"></span></a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<!-- copyright -->
 			
 			
 			<!-- move top -->
 			<button onclick="topFunction()" id="movetop" title="Go to top">
-				<span class="fa fa-arrow-up" aria-hidden="true"></span>
-			</button>
+        <span class="fa fa-arrow-up" aria-hidden="true"></span>
+    </button>
 			<script>
 				// When the user scrolls down 20px from the top of the document, show the button
 				window.onscroll = function () {
@@ -520,19 +202,48 @@ testi-des {
 
 		</section>
 	</footer>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+
+
+    <!-- Include Owl Carousel after jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script type="text/javascript">
+     function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+        // Your other scripts here
+        $(document).ready(function () {
+            var options = {
+                useEasing: true,
+                useGrouping: true,
+                separator: ',',
+                decimal: '.',
+            };
+
+            var demo = new CountUp('yourTargetElement', 0, 1000, 0, 2.5, options);
+
+            if (!demo.error) {
+                demo.start();
+            } else {
+                console.error(demo.error);
+            }
+        });
+        </script>
 </body>
 
 </html>
-<script src="assets/js/jquery-3.3.1.min.js"></script>
-<!-- stats -->
-<script src="assets/js/jquery.waypoints.min.js"></script>
-<script src="assets/js/jquery.countup.js"></script>
-<script type="text/javascript" src='assets/js/swiper.min.js'></script>
+
+
 <script>
 	$('.counter').countUp();
 </script>
 <!--/theme-change-->
-<script src="assets/js/theme-change.js"></script>
+
 <script>
 	const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
 	const currentTheme = localStorage.getItem('theme');
@@ -569,7 +280,7 @@ testi-des {
 	}
 	toggleSwitch.addEventListener('change', switchTheme, false);
 </script>
-<script src="assets/js/owl.carousel.js"></script>
+
 <!-- script for banner slider-->
 <script>
 	$(document).ready(function () {
@@ -718,4 +429,4 @@ testi-des {
 		});
 	});
 </script>
-<script src="assets/js/bootstrap.min.js"></script>
+

@@ -27,7 +27,7 @@
 <header>
 <nav class="navbar navbar-expand-sm custom-navbar" style="background-color: maroon;">
   <div class="container-fluid">
-    <a class="navbar-brand" href="Home.jsp"><i class="fa-solid fa-film"></i> MovieTicket</a>
+    <a class="navbar-brand" href="javascript:void(0)"><i class="fa-solid fa-film"></i> MovieTicket</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -141,15 +141,11 @@
         </a>
     </div>
 </div>
-</section>
-<section>
-	<div class="conatiner-fluid">
+<div class="container-fluid">
     <div class="show">
-    <h1  style="margin-top: 1%; padding-top: 2%; margin-left: 4%;">Popular Movie</h1>
-    <h6 style="margin-left: 60%;">Show All</h6></div>
-<div class="container">
-	<div class="container">
-    <div class="row">
+    <h1>Popular Movie</h1>
+    <h6 style="margin-right: 5%;">Show All</h6></div>
+    <div class="row" id = "con">
         <div class="col-6 col-md-3">
                 <img src="assets/images/the-equalizer.webp" alt="Equalizer">
                 <div class="descriptions">
@@ -190,9 +186,9 @@
                 </div>
         </div>
         <div class="col-6 col-md-3">
-            <img src="assets/images/avtar-2.jpeg" alt="Avtar">
+            <img src="assets/images/avtar-2.jpeg" alt="Avatar">
                 <div class="descriptions">
-                    <h3>Avtar 2</h3>
+                    <h3>Avatar 2</h3>
                     <p>
                         It follows a blue-skinned humanoid Na'vi named Jake Sully (Worthington) as he and his family, under renewed human threat, seek refuge with the aquatic Metkayina clan of Pandora, a habitable exomoon on which they live.
                     </p>
@@ -203,10 +199,11 @@
                 </div>
         </div>
     </div>
-    <div class="row">  
-    <div class="show" style="margin-right:15%;">
-        <h1 style="margin-top:15%; margin-left: 1%; padding-left:0; margin-bottom: 2%;">New Releases</h1>
-        <h6 style="margin-left: 70%; margin-bottom: 2%;">Show All</h6></div>
+    
+    <div class="show">
+        <h1 style="margin-bottom: 2%;">New Releases</h1>
+        <h6 style="margin-right: 5%;">Show All</h6></div>
+    <div class="row" id="con">  
         <div class="col-6 col-md-3">
             <img src="assets/images/n2.jpg" alt="Mulan">
                 <div class="descriptions">
@@ -255,14 +252,9 @@
                 </div>
         </div>
     </div>
-    </div>
-</div>
-</section>
 
-<section>
-<div class="container-fluid">
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
+        <div class="carousel-inner" style="margin-top: 0;">
             <div class="carousel-item active">
                 <img src="assets/images/meg.jpg" alt="Image 1">
                 <div class="carousel-caption d-none d-md-block">
@@ -309,8 +301,61 @@
 </div>
 </section>
 
-
-<footer><jsp:include page = "footer.html"/></footer>
+<footer>
+<div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                  <div class="col-6 col-sm-4">
+                    <h2><i class="fa fa-play"> Movie Ticket </i></h2>
+                    <p>&copy; 2023 Movie Tickets. All rights reserved</p>
+                    <ol class="social">
+                        <li><a href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true">
+                        </i></a></li>
+                        <li><a href="https://in.linkedin.com/"><i class="fa fa-linkedin"aria-hidden="true">
+                        </i></a></li>
+                        <li><a href="https://twitter.com/"><i class="fa fa-twitter" aria-hidden="true">
+                        </i></a></li>
+                        <li><a href="https://www.google.com/gmail/about/"><i class="fa fa-google-plus" aria-hidden="true">
+                        </i></a></li>
+                    </ol>
+                  </div>
+                  <div class="col">
+                    <h3> Movies </h3>
+                    <ol>
+                        <li><a href="#">Movies</a></li>
+                        <li><a href="#">Videos</a></li>
+                        <li><a href="#">English Movies</a></li>
+                        <li><a href="#">Tailor</a></li>
+                        <li><a href="#">Upcoming Movies</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ol>
+                  </div>
+                  <div class="col">
+                    <h3> Information </h3>
+                    <ol>
+                        <li><a href="index.jsp">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="#">Tv Series</a></li>
+                        <li><a href="#">Blogs</a></li>
+                        <li><a href="sign_in.html">Login</a></li>
+                        <li><a href="Contact_Us.html">Contact</a></li>
+                    </ol>
+                  </div>
+                  <div class="col">
+                    <h3> Location </h3>
+                    <ol>
+                        <li><a href="Movies.jsp">Asia</a></li>
+                        <li><a href="Movies.jsp">France</a></li>
+                        <li><a href="Movies.jsp">Taiwan</a></li>
+                        <li><a href="Movies.jsp">United States</a></li>
+                        <li><a href="Movies.jsp">Korea</a></li>
+                        <li><a href="Movies.jsp">United Kingdom</a></li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+          </div>
+</footer>
 
 </body>
 </html>

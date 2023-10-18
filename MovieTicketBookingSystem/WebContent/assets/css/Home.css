@@ -1,7 +1,9 @@
-    *{
-    padding:0;
-    margin:0;
-    }
+body, h1, h2, h3, p {
+    	margin: 0;
+    	padding: 0;
+    	font-family:'Times New Roman', Times, serif;
+	}
+
     body{
         background-color: #3d3d3d;
         padding: 0px;
@@ -10,6 +12,17 @@
         height:100vh;
         font-family:'Times New Roman', Times, serif;
     }
+    
+    header {
+    	background-color: maroon;
+	}
+	
+	.carousel {
+    	width: 100%;
+    	margin: 0 auto;
+    	max-height: 500px;
+	}
+	
     .carousel-item img{
         max-height: 500px;
         max-width: 1500px;
@@ -20,17 +33,13 @@
         margin: auto;
     }
 
-.container{
-	padding-top: 10%;
-}
-
     .carousel-caption {
         background: rgba(0, 0, 0, 0.6);
         color: #fff;
         padding: 10px;
         margin: 10px 0 34px 0;
         padding: 0 60px;
-        color: #fff;
+        font-size: 30px;
     }
 
     .carousel-caption h3 {
@@ -43,10 +52,11 @@
         font-size: 16px;
         opacity: 0.8;
     }
-
+    
     .show{
         display: flex;
-        /* margin: 5%; */
+        justify-content: space-between;
+        margin: 5%;
         padding-left:5%;
     }
     .show h6{
@@ -55,32 +65,31 @@
         margin-left: 50%;
         align-self: self-end;
     }
-    a span{ text-decoration: none; }
+    #con{margin-top: 15%; height: 350px;}
     .row{
         position: relative;
-        
+        top:50%;
         left:50%;
         transform: translate(-50%, -50%);
-        margin-top: 20%;
+        margin-top: 15%;
         width:100%;
         max-width: 1250px;
-        /* height:auto; */
         display:flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        
+        height:450px;
     }
 
     .col-md-3{
         flex: 1;
-        flex-basis: 300px;
+        flex-basis: calc(25% - 20px);
         flex-grow: 0;
         height: 500px;
         background: #fff;
-        border: 2px solid #fff;
+        border: 1px solid #fff;
         box-shadow: 0px 4px 7px rgba(0,0,0,.5);
         cursor: pointer;
-        transition: all .5s cubic-bezier(.8,.5,.2,1.4);
+        transition: all 0.5s cubic-bezier(0.8,0.5,0.2,1.4);
         overflow: hidden;
         position: relative;
     }
@@ -88,7 +97,7 @@
     .col-md-3 img{
         width: 100%;
         height:100%;
-        transition: all .5s cubic-bezier(.8,.5,.2,1.4);
+        transition: all 0.5s cubic-bezier(0.8,0.5,0.2,1.4);
     }
 
     .descriptions{
@@ -96,10 +105,10 @@
         top:0px;
         left:0px;
         color: crimson;
-        background-color: rgba(255,255,255,.7);
+        background-color: rgba(255,255,255,0.7);
         width:100%;
         height:100%;
-        transition: all .7s ease-in-out;
+        transition: all 0.7s ease-in-out;
         padding: 20px;
         box-sizing: border-box;
         clip-path: circle(0% at 100% 100%);
@@ -107,16 +116,16 @@
 
     .col-md-3:hover .descriptions{
         left:0px;
-        transition: all .7s ease-in-out;
+        transition: all 0.7s ease-in-out;
         clip-path: circle(75%);
     }
     .col-md-3:hover{
-        transition: all .5s cubic-bezier(.8,.5,.2,1.4);
+        transition: all 0.5s cubic-bezier(0.8,0.5,0.2,1.4);
         box-shadow: 0px 2px 3px rgba(0,0,0,.3);
-        transform: scale(.97);
+        transform: scale(0.97);
     }
     .col-md-3:hover img{
-        transition: all .5s cubic-bezier(.8,.5,.2,1.4);
+        transition: all .5s cubic-bezier(0.8,0.5,0.2,1.4);
         transform: scale(1.6) rotate(20deg);
         filter: blur(3px);
     }
@@ -139,10 +148,50 @@
         color:#fff;
         font-size: 15px;
         outline: none;
-        box-shadow: 0px 2px 3px rgba(0,0,0,.4);
-        transition: all .5s ease-in-out;
+        box-shadow: 0px 2px 3px rgba(0,0,0,0.4);
+        transition: all 0.5s ease-in-out;
     }
     .col-md-3 button:hover{
-        transform: scale(.95) translateX(-5px);
-        transition: all .5s ease-in-out;
+        transform: scale(0.95) translateX(-5px);
+        transition: all 0.5s ease-in-out;
     }
+    
+    
+    footer{
+            position: relative;
+            background-color: #000;
+            font-family: 'Times New Roman', Times, serif;
+            padding-top: 25px;
+        }
+        footer h2, .col h3, p{
+            color: #fff;
+        }
+        footer .row{ padding-top:250px; height:350px; }
+        footer h3{ padding-left: 30px; }
+        footer ol li{
+            list-style: none;
+            position: relative;
+            color: #fff;
+        }
+        footer ol li a{
+            text-decoration: none;
+            color: #fff;
+            font-size: 15px;
+        }
+        footer ol li a:hover{
+            text-decoration: none;
+            color: crimson;
+        }
+        
+        .social li{
+            display: inline-block;
+            margin-right: 4px;
+            background: transparent;
+            text-align: center;
+            font-size: 18px;
+            width: 32px;
+        }
+        .social li a i{
+            margin-right: 8px;
+            text-align: center;
+        }
