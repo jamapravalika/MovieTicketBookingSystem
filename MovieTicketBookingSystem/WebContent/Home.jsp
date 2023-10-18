@@ -191,7 +191,7 @@
         <div class="col-6 col-md-3">
             <img src="assets/images/avtar-2.jpeg" alt="Avtar">
                 <div class="descriptions">
-                    <h3>Avtar 2</h3>
+                    <h3>Avatar 2</h3>
                     <p>
                         It follows a blue-skinned humanoid Na'vi named Jake Sully (Worthington) as he and his family, under renewed human threat, seek refuge with the aquatic Metkayina clan of Pandora, a habitable exomoon on which they live.
                     </p>
