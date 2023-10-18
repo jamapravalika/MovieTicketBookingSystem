@@ -199,7 +199,7 @@
         <div class="card" >
             <img class="card-img-top custom-card-image" src="assets/images/skanda.jpg" alt="Card image">
             <div class="card-body">
-                <h4 class="card-title">skanda</h4>
+                <h4 class="card-title">Skanda</h4>
                 <p class="card-text">Action/Drama</p>
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">Show more</button>
             </div> 
@@ -229,7 +229,7 @@
         <div class="card">
             <img class="card-img-top custom-card-image" src="assets/images/sarkar.jpeg" alt="Card image">
             <div class="card-body">
-                <h4 class="card-title">sarkar</h4>
+                <h4 class="card-title">Sarkar</h4>
                 <p class="card-text">Action/Drama</p>
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">Show more</button>
             </div> 
@@ -257,7 +257,7 @@
             </div>
           </div>
         <div class="card">
-            <img class="card-img-top custom-card-image" src="assets/images/Kushi.jpg" alt="Card image">
+            <img class="card-img-top custom-card-image" src="assets/images/kushi.jpg" alt="Card image">
             <div class="card-body">
                 <h4 class="card-title">Kushi</h4>
                 <p class="card-text">Comedy/Drama</p>
@@ -329,7 +329,7 @@
         <div class="card">
             <img class="card-img-top custom-card-image" src="assets/images/oppenheimer-portrait.webp" alt="Card image">
             <div class="card-body">
-                <h4 class="card-title">oppenheimer</h4>
+                <h4 class="card-title">Oppenheimer</h4>
                 <p class="card-text">Drama/History</p>
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">Show more</button>
             </div> 
@@ -400,7 +400,7 @@
         <div class="card" >
             <img class="card-img-top custom-card-image" src="assets/images/skanda.jpg" alt="Card image">
             <div class="card-body">
-                <h4 class="card-title">skanda</h4>
+                <h4 class="card-title">Skanda</h4>
                 <p class="card-text"></p>
                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">Show more</button>
             </div> 
@@ -430,7 +430,7 @@
         <div class="card">
             <img class="card-img-top custom-card-image" src="assets/images/sarkar.jpeg" alt="Card image">
             <div class="card-body">
-                <h4 class="card-title">sarkar</h4>
+                <h4 class="card-title">Sarkar</h4>
                 <p class="card-text"></p>
                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">Show more</button>
             </div> 
@@ -458,7 +458,7 @@
             </div>
           </div>
         <div class="card">
-            <img class="card-img-top custom-card-image" src="assets/images/Kushi.jpg" alt="Card image">
+            <img class="card-img-top custom-card-image" src="assets/images/kushi.jpg" alt="Card image">
             <div class="card-body">
                 <h4 class="card-title">Kushi</h4>
                 <p class="card-text"></p>
@@ -487,6 +487,7 @@
               </div>
             </div>
           </div>
+    </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
@@ -528,5 +529,6 @@
 });
     </script>
     
+    <%-- <footer><div class="container-fluid"><jsp:include page = "footer.html"/></div></footer> --%>
 </body>
 </html>
