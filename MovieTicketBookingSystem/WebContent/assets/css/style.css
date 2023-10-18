@@ -8,9 +8,7 @@
     }
     .carousel-item img{
         max-height: 500px;
-
         max-width: 1500px;
-
         background-size: cover;
         position: relative;
         align-items: center;
@@ -19,7 +17,7 @@
     }
     
 	.container{
-		padding-top: 7%;
+		padding-top: 9%;
 	
 	}
 
@@ -93,6 +91,7 @@
         position: absolute;
         top:0px;
         left:0px;
+        color: crimson;
         background-color: rgba(255,255,255,.7);
         width:100%;
         height:100%;
@@ -125,6 +124,7 @@
     .col-md-3 p{
         line-height: 24px;
         height: 70%;
+        color: #0000ff;
     }
     .col-md-3 button{
         width: fit-content;

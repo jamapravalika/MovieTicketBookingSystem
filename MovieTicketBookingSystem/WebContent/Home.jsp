@@ -105,11 +105,9 @@
                 <img src="assets/images/kushiPos.jpg" alt="Image 3">
                 <div class="carousel-caption d-none d-md-block">
                     <h3>Kushi</h3>
-                    <p>
-                    A couple who are predicted to have a failed marriage, decide to become ideal 
+                    <p>A couple who are predicted to have a failed marriage, decide to become ideal 
                         partners for each other. <span style="font-style: italic;">
-                        Will it work out or will they realize that their parents were right?
-                        </span></p>
+                        Will it work out or will they realize that their parents were right?</span></p>
                         <a href="" style="text-decoration: none;">
                             <span style="color: #fff;"><i class="fa fa-play" style="align-items: center;"></i>
                                Watch Trailer</span>
@@ -123,8 +121,8 @@
 								<p>
 									When a magical meteor crash lands in Adventure City, it gives
 									the Paw Patrol pups<span style="font-style: italic;"> superpowers,
-										transforming them into The Mighty Pups!
-										</span></p>
+										transforming them into The Mighty Pups!</span>
+								</p>
 								<a href="#small-dialog4" style="text-decoration: none;">
 									<span style="color: #fff;"><i class="fa fa-play" style="align-items: center;"></i>
 									Watch Trailer</span>
@@ -146,10 +144,9 @@
 <section>
 	<div class="conatiner-fluid">
     <div class="show">
-    <h1>Popular Movie</h1>
-    <h6 style="margin-left: 70%;">Show All</h6></div>
-<div class="container">
-    <h6>Show All</h6></div>
+    <h1  style="margin-left: 4%;">Popular Movie</h1>
+    <h6 style="margin-left: 60%;">Show All</h6></div>
+	<div class="container">
 	<div class="container">
     <div class="row">
         <div class="col-6 col-md-3">
@@ -192,7 +189,7 @@
                 </div>
         </div>
         <div class="col-6 col-md-3">
-            <img src="assets/images/avtar-2.jpeg" alt="Avtar">
+            <img src="assets/images/avtar-2.jpeg" alt="Avatar">
                 <div class="descriptions">
                     <h3>Avatar 2</h3>
                     <p>
@@ -207,8 +204,8 @@
     </div>
     <div class="row">  
     <div class="show" style="margin-right:15%;">
-        <h1 style="margin-top:15%; padding-left:0;">New Releases</h1>
-        <h6 style="margin-left: 70%;">Show All</h6></div>
+        <h1 style="margin-top:18%; margin-bottom: 2%;">New Releases</h1>
+        <h6 style="margin-left: 65%; margin-bottom: 2%;">Show All</h6></div>
         <div class="col-6 col-md-3">
             <img src="assets/images/n2.jpg" alt="Mulan">
                 <div class="descriptions">
@@ -258,6 +255,7 @@
         </div>
     </div>
     </div>
+</div>
 </div>
 </section>
 <section>
