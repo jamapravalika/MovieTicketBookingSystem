@@ -8,9 +8,7 @@
     }
     .carousel-item img{
         max-height: 500px;
-
         max-width: 1500px;
-
         background-size: cover;
         position: relative;
         align-items: center;
@@ -19,15 +17,8 @@
     }
 
 .container{
-	padding-top: 13%;
+	padding-top: 10%;
 }
-
-    
-	.container{
-		padding-top: 13%;
-	
-	}
-
 
     .carousel-caption {
         background: rgba(0, 0, 0, 0.6);
@@ -51,7 +42,7 @@
 
     .show{
         display: flex;
-        margin: 5%;
+        /* margin: 5%; */
         padding-left:5%;
     }
     .show h6{

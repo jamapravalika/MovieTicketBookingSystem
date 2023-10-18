@@ -145,10 +145,9 @@
 <section>
 	<div class="conatiner-fluid">
     <div class="show">
-    <h1>Popular Movie</h1>
-    <h6 style="margin-left: 70%;">Show All</h6></div>
+    <h1  style="margin-top: 1%; padding-top: 2%; margin-left: 4%;">Popular Movie</h1>
+    <h6 style="margin-left: 60%;">Show All</h6></div>
 <div class="container">
-    <h6>Show All</h6></div>
 	<div class="container">
     <div class="row">
         <div class="col-6 col-md-3">
@@ -206,8 +205,8 @@
     </div>
     <div class="row">  
     <div class="show" style="margin-right:15%;">
-        <h1 style="margin-top:15%; margin-left: 1%; padding-left:0;">New Releases</h1>
-        <h6 style="margin-left: 70%;">Show All</h6></div>
+        <h1 style="margin-top:15%; margin-left: 1%; padding-left:0; margin-bottom: 2%;">New Releases</h1>
+        <h6 style="margin-left: 70%; margin-bottom: 2%;">Show All</h6></div>
         <div class="col-6 col-md-3">
             <img src="assets/images/n2.jpg" alt="Mulan">
                 <div class="descriptions">
