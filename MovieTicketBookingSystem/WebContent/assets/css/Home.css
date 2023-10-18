@@ -24,9 +24,6 @@
 	padding-top: 10%;
 }
 
-
-
-
     .carousel-caption {
         background: rgba(0, 0, 0, 0.6);
         color: #fff;
@@ -61,7 +58,7 @@
     a span{ text-decoration: none; }
     .row{
         position: relative;
-        top:50%;
+        
         left:50%;
         transform: translate(-50%, -50%);
         margin-top: 20%;
