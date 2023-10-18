@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -66,7 +65,6 @@
   </div>
 </nav>
 </header>
-<br>
 <section>
 <div class="container-fluid">
     <div id="myCarousel" class="carousel slide" data-ride="carousel" style:"width:80%">
