@@ -17,17 +17,11 @@
         width: 100%;
         margin: auto;
     }
-
-.container{
-	padding-top: 13%;
-}
-
     
 	.container{
-		padding-top: 13%;
+		padding-top: 7%;
 	
 	}
-
 
     .carousel-caption {
         background: rgba(0, 0, 0, 0.6);
