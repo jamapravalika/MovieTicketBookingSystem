@@ -22,24 +22,25 @@
     <div class="collapse navbar-collapse" id="mynavbar">
       <ul class="navbar-nav me-auto">
         <li class="nav-item">
-          <a class="nav-link" href="index.jsp"><i class="fas fa-home"></i> Home</a>
+          <a class="nav-link" href="Home.jsp"><i class="fas fa-home"></i> Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="Movies.jsp"><i class="fa-solid fa-video"></i> Movies</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href=""><i class="fas fa-envelope"></i> Contact</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href=""><i class="fas fa-book"></i> About</a>
+          <a class="nav-link" href="About.html"><i class="fas fa-book"></i> About</a>
       </li>
+        <li class="nav-item">
+          <a class="nav-link" href="ContactForm.jsp"><i class="fas fa-envelope"></i> Contact</a>
+        </li>
+        
       
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"><i class="fas fa-user"></i> Account</a>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="#">Account</a></li>
             <li><a class="dropdown-item" href="#">History</a></li>
-            <li><a class="dropdown-item" href="#">Logout</a></li>
+            <li><a class="dropdown-item" href="login.jsp">Logout</a></li>
           </ul>
         </li>
       </ul>

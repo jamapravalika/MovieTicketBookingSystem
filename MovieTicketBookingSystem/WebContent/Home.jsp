@@ -66,13 +66,13 @@
   </div>
 </nav>
    
-
+<br>
 <div class="container-fluid">
 
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" style:"width:80%">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="assets/images/banner1.jpg" alt="Image 1">
+                <img src="assets/images/JawanPos.jpg" alt="Image 1">
                 <div class="carousel-caption d-none d-md-block">
                     <h3>Jawan</h3>
 								<p>
@@ -87,7 +87,7 @@
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="assets/images/banner2.jpg" alt="Image 2">
+                <img src="assets/images/shettyPos.avif" alt="Image 2">
                 <div class="carousel-caption d-none d-md-block">
                     <h3>Miss Shetty Mr Polishetty</h3>
 								<p>
@@ -104,7 +104,7 @@
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="assets/images/banner3.jpeg" alt="Image 3">
+                <img src="assets/images/KushiPos.avif" alt="Image 3">
                 <div class="carousel-caption d-none d-md-block">
                     <h3>Kushi</h3>
                     <p>A couple who are predicted to have a failed marriage, decide to become ideal 

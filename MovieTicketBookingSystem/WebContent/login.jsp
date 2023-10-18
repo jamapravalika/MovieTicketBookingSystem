@@ -6,9 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <title>Login</title>
 
-<link rel="stylesheet"
-	href="fonts/material-icon/css/material-design-iconic-font.min.css">
-
+<link rel="stylesheet" href="assets/fonts/material-icon/css/material-design-iconic-font.min.css">
 <link rel="stylesheet" href="assets/css/login.css">
 <link rel="stylesheet" href="alert/dist/sweetalert.css">
 </head>

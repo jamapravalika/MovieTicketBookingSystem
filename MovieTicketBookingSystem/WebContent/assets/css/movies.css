@@ -18,8 +18,8 @@
     border: 1px solid #ddd;
     border-radius: 5px; 
 }
-.modal{
-	width:50%;
+p{
+	color: #cb4812;
 }
 h2 {
     margin-left: 7%;
@@ -35,9 +35,7 @@ h2 {
     color:rgb(11, 11, 11);
     background: linear-gradient(90deg, rgba(244, 11, 11, 0.8), rgba(245, 240, 240, 0.8) 87.19%);
 }
-.modal-header{
-    margin-right: 5%;
-}
+
 /* .owl-carousel {
     /* display: none; */
     /* width: 100%;

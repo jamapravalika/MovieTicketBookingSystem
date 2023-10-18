@@ -201,25 +201,90 @@
             <div class="card-body">
                 <h4 class="card-title">skanda</h4>
                 <p class="card-text">Action/Drama</p>
-                <a href="#" class="btn btn-primary">Book Tickets</a>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">Show more</button>
             </div> 
-        </div>
+        </div> 
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">Mad</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <img src="assets/images/mad-2023-et00370942-1695798072.webp" alt="Mad Image">
+                    <p class="card-text">Comedy/Drama</p>
+                    <p>The story follows three college freshmen, Manoj, Ashok, and Damodhar, as they become best friends, navigate college experiences, and ultimately find their true love.</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
         <div class="card">
             <img class="card-img-top custom-card-image" src="assets/images/sarkar.jpeg" alt="Card image">
             <div class="card-body">
                 <h4 class="card-title">sarkar</h4>
                 <p class="card-text">Action/Drama</p>
-                <a href="#" class="btn btn-primary">Book Tickets</a>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">Show more</button>
             </div> 
-        </div>
+        </div> 
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">Mad</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <img src="assets/images/mad-2023-et00370942-1695798072.webp" alt="Mad Image">
+                    <p class="card-text">Comedy/Drama</p>
+                    <p>The story follows three college freshmen, Manoj, Ashok, and Damodhar, as they become best friends, navigate college experiences, and ultimately find their true love.</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
         <div class="card">
             <img class="card-img-top custom-card-image" src="assets/images/Kushi.jpg" alt="Card image">
             <div class="card-body">
                 <h4 class="card-title">Kushi</h4>
                 <p class="card-text">Comedy/Drama</p>
-                <a href="#" class="btn btn-primary">Book Tickets</a>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">Show more</button>
             </div> 
-        </div>
+        </div> 
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">Mad</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <img src="assets/images/mad-2023-et00370942-1695798072.webp" alt="Mad Image">
+                    <p class="card-text">Comedy/Drama</p>
+                    <p>The story follows three college freshmen, Manoj, Ashok, and Damodhar, as they become best friends, navigate college experiences, and ultimately find their true love.</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
     </div>
     <h2>Popular Movies</h2>
     <div class="container mt-3">
@@ -236,17 +301,61 @@
             <div class="card-body">
                 <h4 class="card-title">Dream Girl II</h4>
                 <p class="card-text">Comedy/Drama</p>
-                <a href="#" class="btn btn-primary">Book Tickets</a>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">Show more</button>
             </div> 
-        </div>
+        </div> 
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">Mad</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <img src="assets/images/mad-2023-et00370942-1695798072.webp" alt="Mad Image">
+                    <p class="card-text">Comedy/Drama</p>
+                    <p>The story follows three college freshmen, Manoj, Ashok, and Damodhar, as they become best friends, navigate college experiences, and ultimately find their true love.</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
         <div class="card">
             <img class="card-img-top custom-card-image" src="assets/images/oppenheimer-portrait.webp" alt="Card image">
             <div class="card-body">
                 <h4 class="card-title">oppenheimer</h4>
                 <p class="card-text">Drama/History</p>
-                <a href="#" class="btn btn-primary">Book Tickets</a>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">Show more</button>
             </div> 
-        </div>
+        </div> 
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">Mad</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <img src="assets/images/mad-2023-et00370942-1695798072.webp" alt="Mad Image">
+                    <p class="card-text">Comedy/Drama</p>
+                    <p>The story follows three college freshmen, Manoj, Ashok, and Damodhar, as they become best friends, navigate college experiences, and ultimately find their true love.</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
         <div class="card">
             <img class="card-img-top custom-card-image" src="assets/images/jumanji.webp" alt="Card image">
             <div class="card-body">
@@ -263,33 +372,121 @@
             <div class="card-body">
                 <h4 class="card-title">Jawan</h4>
                 <p class="card-text"></p>
-                <a href="#" class="btn btn-primary">Book Tickets</a>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">Show more</button>
             </div> 
-        </div>
+        </div> 
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">Mad</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <img src="assets/images/mad-2023-et00370942-1695798072.webp" alt="Mad Image">
+                    <p class="card-text">Comedy/Drama</p>
+                    <p>The story follows three college freshmen, Manoj, Ashok, and Damodhar, as they become best friends, navigate college experiences, and ultimately find their true love.</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
         <div class="card" >
             <img class="card-img-top custom-card-image" src="assets/images/skanda.jpg" alt="Card image">
             <div class="card-body">
                 <h4 class="card-title">skanda</h4>
                 <p class="card-text"></p>
-                <a href="#" class="btn btn-primary">Book Tickets</a>
+               <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">Show more</button>
             </div> 
-        </div>
+        </div> 
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">Mad</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <img src="assets/images/mad-2023-et00370942-1695798072.webp" alt="Mad Image">
+                    <p class="card-text">Comedy/Drama</p>
+                    <p>The story follows three college freshmen, Manoj, Ashok, and Damodhar, as they become best friends, navigate college experiences, and ultimately find their true love.</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
         <div class="card">
             <img class="card-img-top custom-card-image" src="assets/images/sarkar.jpeg" alt="Card image">
             <div class="card-body">
                 <h4 class="card-title">sarkar</h4>
                 <p class="card-text"></p>
-                <a href="#" class="btn btn-primary">Book Tickets</a>
+               <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">Show more</button>
             </div> 
-        </div>
+        </div> 
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">Mad</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <img src="assets/images/mad-2023-et00370942-1695798072.webp" alt="Mad Image">
+                    <p class="card-text">Comedy/Drama</p>
+                    <p>The story follows three college freshmen, Manoj, Ashok, and Damodhar, as they become best friends, navigate college experiences, and ultimately find their true love.</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
         <div class="card">
             <img class="card-img-top custom-card-image" src="assets/images/Kushi.jpg" alt="Card image">
             <div class="card-body">
                 <h4 class="card-title">Kushi</h4>
                 <p class="card-text"></p>
-                <a href="#" class="btn btn-primary">Book Tickets</a>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">Show more</button>
             </div> 
-        </div>
+        </div> 
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">Mad</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <img src="assets/images/mad-2023-et00370942-1695798072.webp" alt="Mad Image">
+                    <p class="card-text">Comedy/Drama</p>
+                    <p>The story follows three college freshmen, Manoj, Ashok, and Damodhar, as they become best friends, navigate college experiences, and ultimately find their true love.</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
@@ -309,17 +506,17 @@
         responsive: {
             0: {
                 items: 2,
-                stagePadding: 40,
+                stagePadding: 60,
                 nav: false
             },
             480: {
                 items: 1,
-                stagePadding: 60,
+                stagePadding: 80,
                 nav: true
             },
             667: {
                 items: 1,
-                stagePadding: 80,
+                stagePadding: 100,
                 nav: true
             },
             1000: {

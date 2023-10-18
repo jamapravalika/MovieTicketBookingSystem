@@ -6,11 +6,9 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <title>Registration</title>
 
-<!-- Font Icon -->
-<link rel="stylesheet"
-	href="fonts/material-icon/css/material-design-iconic-font.min.css">
 
-<!-- Main css -->
+<link rel="stylesheet" href="assets/fonts/material-icon/css/material-design-iconic-font.min.css">
+<link rel="stylesheet" href="alert/dist/sweetalert.css">
 <link rel="stylesheet" href="assets/css/login.css">
 
 <script>
@@ -58,8 +56,7 @@ function isNumber(evt){
 							</div>
 							<div class="form-group">
 								<label for="contact"><i class="zmdi zmdi-lock-outline"></i></label>
-								<input type="text" name="contact" id="contact" onkeypress="return isNumber(event);"
-									placeholder="Contact no" required="required"/>
+								<input type="text" name="contact" id="contact" placeholder="Contact no" onkeypress="isNumber(event);" required="required"/>
 							</div>
 							<div class="form-group">
 								<input type="checkbox" name="agree-term" id="agree-term"
@@ -91,7 +88,7 @@ function isNumber(evt){
 <script src="vendor/jquery/jquery.min.js"></script>
 <script src="js/main.js"></script>
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-<link rel="stylesheet" href="alert/dist/sweetalert.css">
+
 
 	
 <script type="text/javascript">

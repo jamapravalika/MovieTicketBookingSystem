@@ -1,0 +1,158 @@
+/* Reset some default styles */
+body, h1, h2, h3, h4, h5, h6, p, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set a global font family and background color for the page */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f0f0f0;
+    color: #333; /* Set a default text color */
+}
+
+/* Style the header/navigation bar */
+.custom-navbar {
+    background-color: maroon;
+    color: white;
+    padding: 10px 0;
+}
+
+.navbar-brand {
+    font-size: 24px;
+}
+
+.navbar-toggler-icon {
+    background-color: white;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    margin-right: 20px;
+    font-size: 16px;
+}
+
+/* Style the main heading */
+h1 {
+    margin-top: 4%;
+    font-size: 36px;
+    color: maroon;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Style the container for the main content */
+.container {
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Style the images in the content */
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Add this to center images */
+    margin: 0 auto; /* Center images horizontally */
+}
+
+/* Style the "Read More" button */
+.read-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: maroon;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: block; /* Make it a block-level element for centering */
+    margin: 0 auto; /* Center the button horizontally */
+    text-align: center;
+    width: 150px; /* Adjust the button width as needed */
+}
+
+/* Style the statistics section */
+.w3l-counter-stats-info {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.counter_grid {
+    padding: 20px;
+}
+
+.icon_info {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Style the testimonials section */
+.testimonial-content {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.testi-des {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.testimonial blockquote {
+    font-size: 18px;
+    color: maroon;
+}
+
+.test-img img {
+    border-radius: 50%;
+    max-width: 100px;
+    height: auto;
+    display: block; /* Center images */
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.peopl {
+    margin-top: 10px;
+}
+
+/* Style the footer section */
+.w3l-footer {
+    background-color: maroon;
+    color: white;
+    padding: 30px 0;
+    text-align: center; /* Center align footer content */
+}
+
+/* Adjust the text alignment in the footer */
+footer .text-txt {
+    text-align: left;
+}
+
+/* Style the "Go to top" button */
+#movetop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: maroon;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 767px) {
+    .navbar-toggler {
+        color: white;
+    }
+
+    .nav-link {
+        margin-right: 0; /* Remove margin to stack nav links on small screens */
+    }
+}
