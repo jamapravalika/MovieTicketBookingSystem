@@ -87,7 +87,7 @@
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="assets/images/shettyPos.avif" alt="Image 2">
+                <img src="assets/images/mrshettyPos.jpg" alt="Image 2">
                 <div class="carousel-caption d-none d-md-block">
                     <h3>Miss Shetty Mr Polishetty</h3>
 								<p>
@@ -104,7 +104,7 @@
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="assets/images/KushiPos.avif" alt="Image 3">
+                <img src="assets/images/kushiPos.jpg" alt="Image 3">
                 <div class="carousel-caption d-none d-md-block">
                     <h3>Kushi</h3>
                     <p>A couple who are predicted to have a failed marriage, decide to become ideal 
@@ -146,7 +146,7 @@
 <section>
     <div class="show">
     <h1>Popular Movie</h1>
-    <h6>Show All</h6></div>
+    <h6 style="margin-left: 70%;">Show All</h6></div>
 <div class="container">
     <div class="row">
         <div class="col-6 col-md-3">
@@ -206,9 +206,9 @@
 <section>
     
     <div class="row">  
-    <div class="show">
-        <h1 style="margin-top:15%">New Releases</h1>
-        <h6>Show All</h6></div>
+    <div class="show" style="margin-right:15%;">
+        <h1 style="margin-top:15%; margin-left: 1%; padding-left:0;">New Releases</h1>
+        <h6 style="margin-left: 70%;">Show All</h6></div>
         <div class="col-6 col-md-3">
             <img src="assets/images/n2.jpg" alt="Mulan">
                 <div class="descriptions">
