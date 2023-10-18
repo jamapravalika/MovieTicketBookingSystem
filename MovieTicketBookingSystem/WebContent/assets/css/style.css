@@ -7,17 +7,18 @@
         font-family:'Times New Roman', Times, serif;
     }
     .carousel-item img{
-        max-height: 300px;
+        max-height: 500px;
         background-size: cover;
         position: relative;
         align-items: center;
         width: 100%;
         margin: auto;
     }
-.container{
-	padding-top: 13%;
+    
+	.container{
+		padding-top: 13%;
 	
-}
+	}
 
     .carousel-caption {
         background: rgba(0, 0, 0, 0.6);
@@ -50,12 +51,7 @@
         margin-left: 50%;
         align-self: self-end;
     }
-/* 
-@media (min-width: 992px) {
-    .text-lg-right {
-      text-align: right !important;
-    }
-} */
+    a span{ text-decoration: none; }
     .row{
         position: relative;
         top:50%;

@@ -25,7 +25,7 @@
 
 </head>
 <body>
-<section>
+<header>
 <nav class="navbar navbar-expand-sm custom-navbar" style="background-color: maroon;">
   <div class="container-fluid">
     <a class="navbar-brand" href="javascript:void(0)"><i class="fa-solid fa-film"></i> MovieTicket</a>
@@ -65,10 +65,9 @@
     </div>
   </div>
 </nav>
-   
-<br>
+</header>
+<section>
 <div class="container-fluid">
-
     <div id="myCarousel" class="carousel slide" data-ride="carousel" style:"width:80%">
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -80,7 +79,7 @@
 										style="font-style: italic;"> the emotional journey of a man who
 										is set to rectify the wrongs in society.</span>
 								</p>
-								<a href="">
+								<a href="" style="text-decoration: none;">
 									<span style="color: #fff;"><i class="fa fa-play" style="align-items: center;"></i> 
 									Watch Trailer</span>
                                 </a>
@@ -97,7 +96,7 @@
 										relationship. Despite being in different stages of life, they
 										connect.</span>
 								</p>
-								<a href="">
+								<a href="" style="text-decoration: none;">
 								 <span style="color: #fff;"><i class="fa fa-play" style="align-items: center;"></i>
 									Watch Trailer</span>
                                 </a>
@@ -110,7 +109,7 @@
                     <p>A couple who are predicted to have a failed marriage, decide to become ideal 
                         partners for each other. <span style="font-style: italic;">
                         Will it work out or will they realize that their parents were right?</span></p>
-                        <a href="">
+                        <a href="" style="text-decoration: none;">
                             <span style="color: #fff;"><i class="fa fa-play" style="align-items: center;"></i>
                                Watch Trailer</span>
                         </a>
@@ -125,7 +124,7 @@
 									the Paw Patrol pups<span style="font-style: italic;"> superpowers,
 										transforming them into The Mighty Pups!</span>
 								</p>
-								<a href="#small-dialog4" class="popup-with-zoom-anim play-view1">
+								<a href="#small-dialog4" style="text-decoration: none;">
 									<span style="color: #fff;"><i class="fa fa-play" style="align-items: center;"></i>
 									Watch Trailer</span>
 								</a>
@@ -144,15 +143,16 @@
 </div>
 </section>
 <section>
+	<div class="conatiner-fluid">
     <div class="show">
     <h1>Popular Movie</h1>
     <h6>Show All</h6></div>
-<div class="container">
+	<div class="container">
     <div class="row">
         <div class="col-6 col-md-3">
                 <img src="assets/images/the-equalizer.webp" alt="Equalizer">
                 <div class="descriptions">
-                    <h3>Equalizer 2</h3>
+                    <h3>Equalizer 3</h3>
                     <p>
                         Since giving up his life as a government assassin, Robert McCall finds solace in serving justice on behalf of the oppressed. Now living in Southern Italy, he soon discovers his new friends are under the control of local crime bosses.                   
                     </p>
@@ -202,9 +202,6 @@
                 </div>
         </div>
     </div>
-</section>
-<section>
-    
     <div class="row">  
     <div class="show">
         <h1 style="margin-top:15%">New Releases</h1>
@@ -257,11 +254,11 @@
                 </div>
         </div>
     </div>
+    </div>
 </div>
 </section>
 <section>
 <div class="container-fluid">
-
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -269,7 +266,7 @@
                 <div class="carousel-caption d-none d-md-block">
                     <span style="font-style: italic;">Action / Adventure</span>
                     <h3>Meg 2</h3>
-						<a href="">
+						<a href="" style="text-decoration: none;">
 							<span style="color: #fff;"><i class="fa fa-play" style="align-items: center;"></i> 
 							Watch Trailer</span>
                         </a>
@@ -280,7 +277,7 @@
                 <div class="carousel-caption d-none d-md-block">
                     <span style="font-style: italic;">Comedy / Adventure</span>
 						<h3>Dolittle</h3>
-						    <a href="">
+						    <a href="" style="text-decoration: none;">
 							<span style="color: #fff;"><i class="fa fa-play" style="align-items: center;"></i>
 							Watch Trailer</span>
                             </a>
@@ -290,8 +287,8 @@
                 <img src="assets/images/mission.jpg" alt="Image 3">
                 <div class="carousel-caption d-none d-md-block">
                     <span style="font-style: italic;">Action / Adventure</span>
-						<h3>Mission: Impossible – Dead Reckoning Part 7</h3>
-                            <a href="">
+						<h3>Mission: Impossible a Dead Reckoning Part 7</h3>
+                            <a href="" style="text-decoration: none;">
                             <span style="color: #fff;"><i class="fa fa-play" style="align-items: center;"></i>
                                Watch Trailer</span>
                         </a>
@@ -309,6 +306,8 @@
     </div>
 </div>
 </section>
+
+<footer><jsp:include page = "footer.html"/></footer>
 
 </body>
 </html>
