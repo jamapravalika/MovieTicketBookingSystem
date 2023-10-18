@@ -535,6 +535,6 @@
 });
     </script>
     
-    <%-- <footer><div class="container-fluid"><jsp:include page = "footer.html"/></div></footer> --%>
+    <%@ include file="footer.html" %>
 </body>
 </html>

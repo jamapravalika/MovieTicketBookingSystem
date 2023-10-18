@@ -34,6 +34,7 @@
             <button type="submit">SEND</button>
         </form>
     </div>
+     <%@ include file="footer.html" %>
     <!--/theme-change-->
 <script src="assets/js/theme-change.js"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
