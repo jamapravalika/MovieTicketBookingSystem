@@ -14,43 +14,15 @@ import java.util.List;
 import javax.servlet.http.HttpServletRequest;
 
 import com.Db.DbConnection;
-
 import com.Model.Bookings;
-
 
 public class BookingDAO implements BookingDAOIntr {
 
-
-	public void createBooking(Bookings book) {
-		// TODO Auto-generated method stub
+	@Override
+	public void createBooking(int BookingId, int UserId, String MovieName, Time ShowTime, float TotalPrice,
+			Date BookingDate) {
 		Connection conn = DbConnection.getConnection();
-		final String QUERY = "INSERT INTO BOOKINGS VALUES(?,?,?,?,?,?,?);";
-		try {
-			PreparedStatement pstmt = conn.prepareStatement(QUERY);
-			
-			pstmt.setDate(1, book.getBookingDate());
-			pstmt.setInt(2, book.getUserId());
-			pstmt.setString(3, book.getMovieName());
-			pstmt.setString(4, book.getShowTime());
-			pstmt.setFloat(5, book.getTotalPrice());
-			pstmt.setTimestamp(6, book.getBookingDate());
-			pstmt.setBoolean(7, book.isConfirmed());
-			
-		}
-		catch(SQLException e) {
-			e.printStackTrace();
-		}
-		finally {
-			System.out.println("Finally Block");
-		}
-		
-	}
-
-    @Override
-    public void createBooking(int BookingId, int UserId, String MovieName, Time ShowTime, float TotalPrice, Date BookingDate) {
-        Connection conn = DbConnection.getConnection();
         final String INSERT_QUERY = "INSERT INTO BOOKINGS (BOOKINGID, USERID, MOVIE_NAME, SHOWTIME, TOTAL_PRICE, BOOKING_DATE, CONFIRMED) VALUES (?, ?, ?, ?, ?, ?, ?);";
-
 
         try (PreparedStatement pstmt = conn.prepareStatement(INSERT_QUERY)) {
             pstmt.setInt(1, BookingId);
@@ -59,7 +31,7 @@ public class BookingDAO implements BookingDAOIntr {
             pstmt.setTime(4, ShowTime);
             pstmt.setFloat(5, TotalPrice);
             pstmt.setTimestamp(6, new Timestamp(BookingDate.getTime()));
-            pstmt.setBoolean(7, false); // Assuming confirmed is initially set to false
+            pstmt.setBoolean(7, false);
 
             int rowsAffected = pstmt.executeUpdate();
             if (rowsAffected > 0) {
@@ -72,23 +44,12 @@ public class BookingDAO implements BookingDAOIntr {
         } finally {
             System.out.println("Finally Block");
         }
-    }
-
-	@Override
-	public void createBooking(int BookingId, int UserId, String MovieName, String ShowTime, float TotalPrice,
-			Date BookingDate) {
-		// TODO Auto-generated method stub
 		
 	}
 
 	@Override
-	public void ShowBooking(int Booking_Id) {
-		// TODO Auto-generated method stub
-		
-	}
-    @Override
-    public boolean confirmBooking(int Booking_Id) {
-        Connection conn = DbConnection.getConnection();
+	public boolean confirmBooking(int Booking_Id) {
+		Connection conn = DbConnection.getConnection();
         final String UPDATE_QUERY = "UPDATE BOOKINGS SET CONFIRMED = ? WHERE BOOKINGID = ?;";
         try {
             PreparedStatement pstmt = conn.prepareStatement(UPDATE_QUERY);
@@ -105,12 +66,12 @@ public class BookingDAO implements BookingDAOIntr {
         } finally {
             System.out.println("Finally Block");
         }
-        return false;
-    }
+		return false;
+	}
 
-    @Override
-    public void deleteBooking(int Booking_Id) {
-        Connection conn = DbConnection.getConnection();
+	@Override
+	public void deleteBooking(int Booking_Id) {
+		Connection conn = DbConnection.getConnection();
         final String QUERY = "DELETE FROM BOOKINGS WHERE BOOKINGID = ?;";
         try {
             PreparedStatement pstm = conn.prepareStatement(QUERY);
@@ -124,28 +85,12 @@ public class BookingDAO implements BookingDAOIntr {
         } finally {
             System.out.println("Finally Block");
         }
-    }
+	}
 
-	
-
-    @Override
-    public void ShowBooking(HttpServletRequest request) {
-        Connection conn = DbConnection.getConnection();
+	@Override
+	public void ShowBooking(HttpServletRequest request) {
+		Connection conn = DbConnection.getConnection();
         final String QUERY = "SELECT * FROM BOOKINGS";
-
-        try{
-            Statement stmt=conn.createStatement();
-            ResultSet result= stmt.executeQuery(QUERY);
-            while (result.next()){
-            	System.out.print(
-                        result.getInt(1)+" "
-                        +result.getInt(2)+" "
-                        +result.getString(3)+" "
-                        +result.getString(4)+" "
-                        +result.getFloat(5)+" "
-                        +result.getTimestamp(6)+" "
-                        +result.getBoolean(7));
-            }
 
         try {
             Statement stmt = conn.createStatement();
@@ -164,16 +109,11 @@ public class BookingDAO implements BookingDAOIntr {
                 bookings.add(booking);
             }
 
-            request.setAttribute("bookings", bookings); 
+            request.setAttribute("bookings", bookings); // Set the bookings as a request attribute
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
             System.out.println("Finally Block");
         }
-
-    }
-        
+	}
 }
-
-
-
