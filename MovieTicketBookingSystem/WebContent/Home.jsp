@@ -105,9 +105,11 @@
                 <img src="assets/images/KushiPos.avif" alt="Image 3">
                 <div class="carousel-caption d-none d-md-block">
                     <h3>Kushi</h3>
-                    <p>A couple who are predicted to have a failed marriage, decide to become ideal 
+                    <p>
+                    A couple who are predicted to have a failed marriage, decide to become ideal 
                         partners for each other. <span style="font-style: italic;">
-                        Will it work out or will they realize that their parents were right?</span></p>
+                        Will it work out or will they realize that their parents were right?
+                        </span></p>
                         <a href="" style="text-decoration: none;">
                             <span style="color: #fff;"><i class="fa fa-play" style="align-items: center;"></i>
                                Watch Trailer</span>
