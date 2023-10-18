@@ -23,7 +23,7 @@
 <body>
     <nav class="navbar navbar-expand-sm custom-navbar" style="background-color: maroon;">
   <div class="container-fluid">
-    <a class="navbar-brand" href="javascript:void(0)"><i class="fa-solid fa-film"></i> MovieTicket</a>
+    <a class="navbar-brand" href="Home.jsp"><i class="fa-solid fa-film"></i> MovieTicket</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
       <span class="navbar-toggler-icon"></span>
     </button>
