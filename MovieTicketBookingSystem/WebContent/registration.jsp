@@ -17,7 +17,7 @@ function isNumber(evt){
 	if(num<48 || num>57){
 		alert("Please Enter a valid Phone Number");
 		evt.preventDefault();
-		return false;'
+		return false;
 	}
 	return true;
 }

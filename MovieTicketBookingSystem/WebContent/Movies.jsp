@@ -3,23 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Other external links (Owl Carousel, Font Awesome, Google Fonts) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <link href="//fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  
-  
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-  <link rel="stylesheet" href="assets/css/movies.css">
-  <link rel="stylesheet" href="assets/css/Header.css">
+
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	
+    
+    <link rel="stylesheet" href="assets/css/movies.css">
+    <link rel="stylesheet" href="assets/css/Header.css">
+
     <title>Movies</title>
 </head>
+
 <body>
     <nav class="navbar navbar-expand-sm custom-navbar" style="background-color: maroon;">
   <div class="container-fluid">
@@ -61,9 +67,7 @@
    
 
     <section class="w3l-grids">
-        <div class="headerhny-title">
-            <h3 class="hny-title">Popular Movies</h3>
-        </div>
+        
 		<div class="grids-main py-4">
 			<div class="container py-lg-4">
 				
@@ -164,7 +168,7 @@
 			</div>
 		</div>
 	</section>
-    <h2>Latest Movies</h2>
+    <h2 style="margin-left: 6%;">Latest Movies</h2>
     <div class="container mt-3">
         <div class="card">
             <img class="card-img-top custom-card-image" src="assets/images/mad-2023-et00370942-1695798072.webp" alt="Card image">
@@ -285,8 +289,9 @@
                 </div>
               </div>
             </div>
+            </div>
     </div>
-    <h2>Popular Movies</h2>
+    <h2 style="margin-left: 6%;">Popular Movies</h2>
     <div class="container mt-3">
         <div class="card">
             <img class="card-img-top custom-card-image" src="assets/images/Jawan.webp" alt="Card image">
@@ -365,7 +370,8 @@
             </div> 
         </div>
     </div>
-    <h2>Tollywood</h2>
+    <div>
+    <h2 style="margin-left: 6%;">Tollywood</h2>
     <div class="container mt-3">
         <div class="card">
             <img class="card-img-top custom-card-image" src="assets/images/Jawan.webp" alt="Card image">
