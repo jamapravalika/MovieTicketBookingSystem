@@ -66,7 +66,7 @@
 </nav>
    
 
-    <section class="w3l-grids">
+    <!-- <section class="w3l-grids">
         
 		<div class="grids-main py-4">
 			<div class="container py-lg-4">
@@ -167,7 +167,7 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</section> -->
     <h2 style="margin-left: 6%;">Latest Movies</h2>
     <div class="container mt-3">
         <div class="card">
@@ -195,7 +195,7 @@
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Save changes</button>
+                  <button type="button" class="btn btn-primary">Book Tickets</button>
                 </div>
               </div>
             </div>
@@ -219,13 +219,13 @@
                   </button>
                 </div>
                 <div class="modal-body">
-                    <img src="assets/images/mad-2023-et00370942-1695798072.webp" alt="Mad Image">
+                    <img src="assets/images/skanda.jpg"" alt="Mad Image">
                     <p class="card-text">Comedy/Drama</p>
                     <p>The story follows three college freshmen, Manoj, Ashok, and Damodhar, as they become best friends, navigate college experiences, and ultimately find their true love.</p>
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Save changes</button>
+                  <button type="button" class="btn btn-primary">Book Tickets</button>
                 </div>
               </div>
             </div>
@@ -249,13 +249,13 @@
                   </button>
                 </div>
                 <div class="modal-body">
-                    <img src="assets/images/mad-2023-et00370942-1695798072.webp" alt="Mad Image">
+                    <img src="assets/images/sarkar.jpeg" alt="Mad Image">
                     <p class="card-text">Comedy/Drama</p>
                     <p>The story follows three college freshmen, Manoj, Ashok, and Damodhar, as they become best friends, navigate college experiences, and ultimately find their true love.</p>
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Save changes</button>
+                  <button type="button" class="btn btn-primary">Book Tickets</button>
                 </div>
               </div>
             </div>
@@ -279,35 +279,79 @@
                   </button>
                 </div>
                 <div class="modal-body">
-                    <img src="assets/images/mad-2023-et00370942-1695798072.webp" alt="Mad Image">
+                    <img src="assets/images/kushi.jpg" alt="Mad Image">
                     <p class="card-text">Comedy/Drama</p>
                     <p>The story follows three college freshmen, Manoj, Ashok, and Damodhar, as they become best friends, navigate college experiences, and ultimately find their true love.</p>
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Save changes</button>
+                  <button type="button" class="btn btn-primary">Book Tickets</button>
                 </div>
               </div>
             </div>
             </div>
     </div>
+    
     <h2 style="margin-left: 6%;">Popular Movies</h2>
     <div class="container mt-3">
         <div class="card">
             <img class="card-img-top custom-card-image" src="assets/images/Jawan.webp" alt="Card image">
             <div class="card-body">
                 <h4 class="card-title">Jawan</h4>
-                <p class="card-text">Action/Dram</p>
-                <a href="#" class="btn btn-primary">Book Tickets</a>
+                <p class="card-text">Drama/Action</p>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">Show more</button>
             </div> 
-        </div>
+        </div> 
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">Jawan</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <img src="assets/images/Jawan.webp" alt="Mad Image">
+                    <p class="card-text">Comedy/Drama</p>
+                    <p>The story follows three college freshmen, Manoj, Ashok, and Damodhar, as they become best friends, navigate college experiences, and ultimately find their true love.</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Book Tickets</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        
         <div class="card" >
-            <img class="card-img-top custom-card-image" src="assets/images/DreamGirl2.webp" alt="Card image">
+            <img class="card-img-top custom-card-image" src="assets/images/Jawan.webp" alt="Card image">
             <div class="card-body">
                 <h4 class="card-title">Dream Girl II</h4>
                 <p class="card-text">Comedy/Drama</p>
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">Show more</button>
-            </div> 
+            </div>
+            <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">Mad</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <img src="assets/images/DreamGirl2.webp" alt="Mad Image">
+                    <p class="card-text">Comedy/Drama</p>
+                    <p>The story follows three college freshmen, Manoj, Ashok, and Damodhar, as they become best friends, navigate college experiences, and ultimately find their true love.</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Book Tickets</button>
+                </div>
+              </div>
+            </div>
         </div> 
           <!-- Modal -->
           <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
@@ -320,16 +364,17 @@
                   </button>
                 </div>
                 <div class="modal-body">
-                    <img src="assets/images/mad-2023-et00370942-1695798072.webp" alt="Mad Image">
+                    <img src="assets/images/DreamGirl2.webp" alt="Mad Image">
                     <p class="card-text">Comedy/Drama</p>
                     <p>The story follows three college freshmen, Manoj, Ashok, and Damodhar, as they become best friends, navigate college experiences, and ultimately find their true love.</p>
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Save changes</button>
+                  <button type="button" class="btn btn-primary">Book Tickets</button>
                 </div>
               </div>
             </div>
+          </div>
           </div>
         <div class="card">
             <img class="card-img-top custom-card-image" src="assets/images/oppenheimer-portrait.webp" alt="Card image">
@@ -350,13 +395,13 @@
                   </button>
                 </div>
                 <div class="modal-body">
-                    <img src="assets/images/mad-2023-et00370942-1695798072.webp" alt="Mad Image">
+                    <img src="assets/images/oppenheimer-portrait.webp" alt="Mad Image">
                     <p class="card-text">Comedy/Drama</p>
                     <p>The story follows three college freshmen, Manoj, Ashok, and Damodhar, as they become best friends, navigate college experiences, and ultimately find their true love.</p>
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Save changes</button>
+                  <button type="button" class="btn btn-primary">Book Tickets</button>
                 </div>
               </div>
             </div>
@@ -398,7 +443,7 @@
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Save changes</button>
+                  <button type="button" class="btn btn-primary">Book Tickets</button>
                 </div>
               </div>
             </div>
@@ -428,7 +473,7 @@
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Save changes</button>
+                  <button type="button" class="btn btn-primary">Book Tickets</button>
                 </div>
               </div>
             </div>
@@ -458,7 +503,7 @@
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Save changes</button>
+                  <button type="button" class="btn btn-primary">Book Tickets</button>
                 </div>
               </div>
             </div>
@@ -488,7 +533,7 @@
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Save changes</button>
+                  <button type="button" class="btn btn-primary">Book Tickets</button>
                 </div>
               </div>
             </div>

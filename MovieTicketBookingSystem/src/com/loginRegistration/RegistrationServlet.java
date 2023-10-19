@@ -57,13 +57,10 @@ public class RegistrationServlet extends HttpServlet {
 		    dispatcher.forward(request, response);
 		}
 
-		
-		
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			
 			con =DriverManager.getConnection("jdbc:mysql://localhost:3306/movieticket?useSSL=false","root","root");
-			// Change the SQL query to match your database structure
 			PreparedStatement pst = con.prepareStatement("Insert into users(uname, upwd, uemail, umobile) values(?, ?, ?, ?)");
 
 			pst.setString(1, uname);

@@ -25,14 +25,11 @@ public class ValidateOtp extends HttpServlet {
 		HttpSession session=request.getSession();
 		int otp=(int)session.getAttribute("otp");
 		
-		
-		
 		RequestDispatcher dispatcher=null;
 		
 		
 		if (value==otp) 
 		{
-			
 			request.setAttribute("email", request.getParameter("email"));
 			request.setAttribute("status", "success");
 			dispatcher=request.getRequestDispatcher("newPassword.jsp");

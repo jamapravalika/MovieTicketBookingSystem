@@ -7,10 +7,11 @@
 <title>Registration</title>
 
 
-<link rel="stylesheet" href="assets/fonts/material-icon/css/material-design-iconic-font.min.css">
-<link rel="stylesheet" href="alert/dist/sweetalert.css">
-<link rel="stylesheet" href="assets/css/login.css">
-
+ <link rel="stylesheet" href="assets/fonts/material-icon/css/material-design-iconic-font.min.css">
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.min.css">
+ <link rel="stylesheet" href="assets/css/login.css">
+    
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
 function isNumber(evt){
 	var num=evt.keyCode ? evt.keyCode : evt.which;
@@ -21,6 +22,15 @@ function isNumber(evt){
 	}
 	return true;
 }
+/*  || !email.endsWith("@yahoo.com")) */
+function validateEmail(email) {
+	if (email === "" || !email.endsWith("@gmail.com") ) {
+	   alert("Please enter a valid Gmail email address");
+	   return false;
+	 }
+	 return true;
+}
+
 </script>
 </head>
 
@@ -43,7 +53,7 @@ function isNumber(evt){
 							</div>
 							<div class="form-group">
 								<label for="email"><i class="zmdi zmdi-email"></i></label> <input
-									type="email" name="email" id="email" placeholder="Your Email" required="required"/>
+									type="email" name="email" id="email" placeholder="Your Email" onblur="validateEmail(this.value)" required="required"/>
 							</div>
 							<div class="form-group">
 								<label for="pass"><i class="zmdi zmdi-lock"></i></label> <input
@@ -81,15 +91,7 @@ function isNumber(evt){
 				</div>
 			</div>
 		</section>
-
-
 	</div>
-	<!-- JS -->
-<script src="vendor/jquery/jquery.min.js"></script>
-<script src="js/main.js"></script>
-<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-
-
 	
 <script type="text/javascript">
 var status=document.getElementById("status").value;

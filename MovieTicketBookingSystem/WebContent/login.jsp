@@ -6,9 +6,25 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <title>Login</title>
 
-<link rel="stylesheet" href="assets/fonts/material-icon/css/material-design-iconic-font.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/material-design-iconic-font@2.2.0/dist/css/material-design-iconic-font.min.css">
+
 <link rel="stylesheet" href="assets/css/login.css">
-<link rel="stylesheet" href="alert/dist/sweetalert.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.min.css">
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.min.js"></script>
+
+<script>
+function validateEmail(email) {
+	if (email === "" || !email.endsWith("@gmail.com") ) {
+	   alert("Please enter a valid Gmail email address");
+	   return false;
+	 }
+	 return true;
+}
+
+</script>
 </head>
 <body>
 <input type="hidden" id="status" value="<%= request.getAttribute("status") %>">
@@ -32,7 +48,7 @@
 								<label for="username"><i
 									class="zmdi zmdi-account material-icons-name"></i></label> <input
 									type="text" name="username" id="username"
-									placeholder="Your Email" />
+									placeholder="Your Email" onblur="validateEmail(this.value)"/>
 							</div>
 							<div class="form-group">
 								<label for="password"><i class="zmdi zmdi-lock"></i></label> <input
@@ -61,8 +77,7 @@
 			</div>
 		</section>
 	</div>
-	<script src="vendor/jquery/jquery.min.js"></script>
-	<script src="js/main.js"></script>
+	
 	
 	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 	
