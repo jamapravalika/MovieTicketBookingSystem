@@ -16,13 +16,25 @@
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.min.js"></script>
 
 <script>
-function validateEmail(email) {
+/* function validateEmail(email) {
 	if (email === "" || !email.endsWith("@gmail.com") ) {
 	   alert("Please enter a valid Gmail email address");
 	   return false;
 	 }
 	 return true;
+} */
+
+function validateEmail(email) {
+    var x = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,3})$/;
+    if (email && email.match(x)) {
+        return true;
+    } else {
+        alert("Invalid Email");
+        document.getElementById("email").focus();
+        return false;
+    }
 }
+
 
 </script>
 </head>

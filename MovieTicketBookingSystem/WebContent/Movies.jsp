@@ -3,14 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!--  owl carasoul -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- Latest Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Latest jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  
+  <!-- Latest Bootstrap 5 JS with Popper.js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  
     
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Other external links (Owl Carousel, Font Awesome, Google Fonts) -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <link href="//fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,600&display=swap" rel="stylesheet">
 
@@ -24,47 +33,56 @@
     <link rel="stylesheet" href="assets/css/Header.css">
 
     <title>Movies</title>
+    
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-sm custom-navbar" style="background-color: maroon;">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="Home.jsp"><i class="fa-solid fa-film"></i> MovieTicket</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <br>
-    <div class="collapse navbar-collapse" id="mynavbar">
-      <ul class="navbar-nav me-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="Home.jsp"><i class="fas fa-home"></i> Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="Movies.jsp"><i class="fa-solid fa-video"></i> Movies</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="About.jsp"><i class="fas fa-book"></i> About</a>
-      </li>
-      <li class="nav-item">
-          <a class="nav-link" href="ContactForm.jsp"><i class="fas fa-envelope"></i> Contact</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"><i class="fas fa-user"></i> Account</a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Account</a></li>
-            <li><a class="dropdown-item" href="#">History</a></li>
-            <li><a class="dropdown-item" href="login.jsp">Logout</a></li>
-          </ul>
-        </li>
-      </ul>
-      <form class="d-flex">
-        <input class="form-control me-2" type="text" placeholder="Search">
-        <i class="fas fa-search"></i>
-      </form>
-    </div>
-  </div>
-</nav>
+   <%@ include file="Header.jsp" %>
    
+<div id="myCarousel" class="carousel slide slide mx-auto" data-bs-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+    <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+    <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+    <li data-bs-target="#myCarousel" data-bs-slide-to="3"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+
+    <div class="carousel-item active">
+      <img src="assets/images/banner1.jpg" alt="Chania" width="460" height="345">
+     
+    </div>
+
+    <div class="carousel-item">
+      <img src="assets/images/banner2.jpg" alt="Chania" width="460" height="345">
+      
+    </div>
+
+    <div class="carousel-item">
+      <img src="assets/images/banner3.jpeg" alt="Flower" width="460" height="345">
+      
+    </div>
+
+    <div class="carousel-item">
+      <img src="assets\images\paw2.jpeg" alt="Flower" width="460" height="345">
+      
+    </div>
+
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#myCarousel" role="button" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </a>
+</div>
 
     <!-- <section class="w3l-grids">
         

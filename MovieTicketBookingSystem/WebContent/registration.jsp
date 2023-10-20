@@ -23,13 +23,27 @@ function isNumber(evt){
 	return true;
 }
 /*  || !email.endsWith("@yahoo.com")) */
-function validateEmail(email) {
+/* function validateEmail(email) {
 	if (email === "" || !email.endsWith("@gmail.com") ) {
 	   alert("Please enter a valid Gmail email address");
 	   return false;
 	 }
 	 return true;
+} */
+
+
+function validateEmail(email) {
+    var x = /[A-Za-z0-9_]{3,}@[A-Za-z]{3,}[.]{1}[A-Za-z.]{2,3}/;
+    if (email && email.match(x)) {
+        return true;
+    } else {
+        alert("Invalid Email");
+        document.getElementById("email").focus();
+        return false;
+    }
 }
+
+
 
 </script>
 </head>
