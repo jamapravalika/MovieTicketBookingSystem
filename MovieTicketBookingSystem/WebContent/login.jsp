@@ -10,10 +10,10 @@
 
 <link rel="stylesheet" href="assets/css/login.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.min.js"></script>
 
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.min.js"></script>
 
 <script>
 /* function validateEmail(email) {
@@ -29,7 +29,7 @@ function validateEmail(email) {
     if (email && email.match(x)) {
         return true;
     } else {
-        alert("Invalid Email");
+    	Swal.fire("Invalid Email");
         document.getElementById("email").focus();
         return false;
     }
@@ -96,19 +96,19 @@ function validateEmail(email) {
 	<script type="text/javascript">
 		var status=document.getElementById("status").value;
 		if(status == "failed"){
-			swal("Sorry","Wrong username and password","error");
+			Swal.fire("Sorry","Wrong username and password","error");
 		}
 		if(status == "invalidEmail"){
-			swal("Sorry","Please Enter Username","error");
+			Swal.fire("Sorry","Please Enter Username","error");
 		}
 		if(status == "invalidupwd"){
-			swal("Sorry","Please Enter Password","error");
+			Swal.fire("Sorry","Please Enter Password","error");
 		}
 		if(status == "resetSuccess"){
-			swal("Congrats","Password set successufully","success");
+			Swal.fire("Congrats","Password set successufully","success");
 		}
 		if(status == "resetFailed"){
-			swal("Sorry","Password Reset Failed","error");
+			Swal.fire("Sorry","Password Reset Failed","error");
 		}
 	</script>
 </body>

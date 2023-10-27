@@ -19,12 +19,24 @@
         <div class="banner-content">
             <h1>Discover the World of Cinema</h1>
             <p>Experience the thrill of the silver screen like never before.</p>
-            <a href="login.jsp" class="cta-button">Book Your Seats</a>
+            <a href="#" class="cta-button" id="bookButton">Book Your Seats</a>
             <br>
             <div class="creative-text">
                 Get ready for a cinematic journey that will leave you spellbound!
             </div>
         </div>
     </div>
+    
+    <script>
+        document.getElementById("bookButton").addEventListener("click", function () {
+            var role = document.getElementById("role").value;
+            if (role === "admin") {
+                window.location.href = "AdmHome.jsp"; // Replace with the actual URL of your admin home page
+            } else if (role === "user") {
+                // Redirect to the user home page
+                window.location.href = "login.jsp"; // Replace with the actual URL of your user home page
+            }
+        });
+    </script>
 </body>
 </html>

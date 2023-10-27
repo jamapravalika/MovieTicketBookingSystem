@@ -8,15 +8,18 @@
 
 
  <link rel="stylesheet" href="assets/fonts/material-icon/css/material-design-iconic-font.min.css">
- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.min.js"></script>
  <link rel="stylesheet" href="assets/css/login.css">
     
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
+var emailAlertShown = false;
+
 function isNumber(evt){
 	var num=evt.keyCode ? evt.keyCode : evt.which;
 	if(num<48 || num>57){
-		alert("Please Enter a valid Phone Number");
+		Swal.fire("Please Enter a valid Phone Number");
 		evt.preventDefault();
 		return false;
 	}
@@ -37,8 +40,11 @@ function validateEmail(email) {
     if (email && email.match(x)) {
         return true;
     } else {
-        alert("Invalid Email");
-        document.getElementById("email").focus();
+        if (!emailAlertShown) { // Check if the alert has already been shown
+            Swal.fire("Invalid Email");
+            document.getElementById("email").focus();
+            emailAlertShown = true; // Set the flag to prevent further alerts
+        }
         return false;
     }
 }
@@ -110,26 +116,26 @@ function validateEmail(email) {
 <script type="text/javascript">
 var status=document.getElementById("status").value;
 if(status=="success"){
-	swal("congrats","Account Created Succesfully","success");
+	Swal.fire("congrats","Account Created Succesfully","success");
 }
 if(status=="invalidName"){
-	swal("Sorry","Please Enter Name","error");
+	Swal.fire("Sorry","Please Enter Name","error");
 }
 if(status=="invalidEmail"){
-	swal("Sorry","Please Enter Email","error");
+	Swal.fire("Sorry","Please Enter Email","error");
 }
 if(status=="invalidUpwd"){
-	swal("Sorry","Please Enter Password","error");
+	Swal.fire("Sorry","Please Enter Password","error");
 } 
 if(status=="invalidUmobile"){
-	swal("Sorry","Please Enter Valid Mobile Number","error");
+	Swal.fire("Sorry","Please Enter Valid Mobile Number","error");
 }
 
 if(status=="invalidUmobileLegth"){
-	swal("Sorry","Please Enter Valid Mobile Number","error");
+	Swal.fire("Sorry","Please Enter Valid Mobile Number","error");
 }
 if(status=="invalidConfirmPassword"){
-	swal("Sorry","Password Donot Match","error");
+	Swal.fire("Sorry","Password Donot Match","error");
 }
 
 </script>

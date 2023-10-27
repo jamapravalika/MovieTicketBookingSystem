@@ -35,5 +35,5 @@ public class MovieServlet extends HttpServlet {
 	    request.setAttribute("movies", movies);
 	    RequestDispatcher dispatcher = request.getRequestDispatcher("dmovie.jsp");
 	    dispatcher.forward(request, response);	
-	    }
+	}
 }

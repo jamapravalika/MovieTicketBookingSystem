@@ -24,65 +24,25 @@
 
 </head>
 <body>
-<header>
-<nav class="navbar navbar-expand-sm custom-navbar" style="background-color: maroon;">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="javascript:void(0)"><i class="fa-solid fa-film"></i> MovieTicket</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <br>
-    <div class="collapse navbar-collapse" id="mynavbar">
-      <ul class="navbar-nav me-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="Home.jsp"><i class="fas fa-home"></i> Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="Movies.jsp"><i class="fa-solid fa-video"></i> Movies</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="About.jsp"><i class="fas fa-book"></i> About</a>
-      </li>
-        <li class="nav-item">
-          <a class="nav-link" href="ContactForm.jsp"><i class="fas fa-envelope"></i> Contact</a>
-        </li>
-        
-      
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"><i class="fas fa-user"></i> Account</a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Account</a></li>
-            <li><a class="dropdown-item" href="#">History</a></li>
-            <li><a class="dropdown-item" href="login.jsp">Logout</a></li>
-          </ul>
-        </li>
-      </ul>
-      <form class="d-flex">
-        <input class="form-control me-2" type="text" placeholder="Search">
-        <i class="fas fa-search"></i>
-      </form>
-    </div>
-  </div>
-</nav>
-</header>
+<%@ include file="Header.jsp" %>
 <br>
 <section>
 <div class="container-fluid">
     <div id="myCarousel" class="carousel slide" data-ride="carousel" style:"width:80%">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="assets/images/JawanPos.jpg" alt="Image 1">
+                <img src="assets/images/banner4.jpg" alt="Image 4">
                 <div class="carousel-caption d-none d-md-block">
-                    <h3>Jawan</h3>
+                    <h3>Paw Patrol: The Mighty Movie</h3>
 								<p>
-									A high-octane action thriller that outlines<span
-										style="font-style: italic;"> the emotional journey of a man who
-										is set to rectify the wrongs in society.</span>
+									When a magical meteor crash lands in Adventure City, it gives
+									the Paw Patrol pups<span style="font-style: italic;"> superpowers,
+										transforming them into The Mighty Pups!</span>
 								</p>
-								<a href="" style="text-decoration: none;">
-									<span style="color: #fff;"><i class="fa fa-play" style="align-items: center;"></i> 
+								<a href="#small-dialog4" style="text-decoration: none;">
+									<span style="color: #fff;"><i class="fa fa-play" style="align-items: center;"></i>
 									Watch Trailer</span>
-                                </a>
+								</a>
                 </div>
             </div>
             <div class="carousel-item">
@@ -115,19 +75,20 @@
                         </a>
                 </div>
             </div>
+            
             <div class="carousel-item">
-                <img src="assets/images/banner4.jpg" alt="Image 4">
+                <img src="assets/images/JawanPos.jpg" alt="Image 1">
                 <div class="carousel-caption d-none d-md-block">
-                    <h3>Paw Patrol: The Mighty Movie</h3>
+                    <h3>Jawan</h3>
 								<p>
-									When a magical meteor crash lands in Adventure City, it gives
-									the Paw Patrol pups<span style="font-style: italic;"> superpowers,
-										transforming them into The Mighty Pups!</span>
+									A high-octane action thriller that outlines<span
+										style="font-style: italic;"> the emotional journey of a man who
+										is set to rectify the wrongs in society.</span>
 								</p>
-								<a href="#small-dialog4" style="text-decoration: none;">
-									<span style="color: #fff;"><i class="fa fa-play" style="align-items: center;"></i>
+								<a href="" style="text-decoration: none;">
+									<span style="color: #fff;"><i class="fa fa-play" style="align-items: center;"></i> 
 									Watch Trailer</span>
-								</a>
+                                </a>
                 </div>
             </div>
         </div>
