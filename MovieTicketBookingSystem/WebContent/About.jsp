@@ -77,7 +77,7 @@
 						<div class="testimonial-content">
 							<div class="testimonial">
 								<blockquote>
-									<q>Iâ€™ve gone through some of the most popular movie websites on the internet today and reviewed them,
+									<q>I'€™ve gone through some of the most popular movie websites on the internet today and reviewed them,
 									 so that you can find out which site is best for your film needs.
 									</q>
 								</blockquote>
