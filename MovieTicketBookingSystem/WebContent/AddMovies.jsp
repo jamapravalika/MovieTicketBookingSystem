@@ -31,7 +31,7 @@
             <br>
         </br>
             <!-- Add Movie Form -->
-<form enctype="multipart/form-data" action="add_movie" method="post">
+<form enctype="multipart/form-data" action="MovieServlet" method="post">
     <!-- Existing fields -->
     <div class="form-group">
         <label for="movieImage">Movie Poster:</label>

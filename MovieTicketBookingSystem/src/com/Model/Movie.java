@@ -12,7 +12,7 @@ public class Movie {
     private Date movie_Release_Date;
     private String movie_Casts;
     private String movie_Description;
-    private Blob movie_Poster;
+    private String movie_Poster;
     private String movie_Duration;
     private String trailerlink;
     private String genre;
@@ -23,7 +23,7 @@ public Movie() {
 		super();
 	}
 public Movie(int movie_Id, int theater_Id, String movie_Name, String movie_Director, Date movie_Release_Date,
-			String movie_Casts, String movie_Description, Blob movie_Poster, String movie_Duration, String trailerlink,
+			String movie_Casts, String movie_Description, String movie_Poster, String movie_Duration, String trailerlink,
 			String genre, Theater theater) {
 		super();
 		this.movie_Id = movie_Id;
@@ -111,10 +111,10 @@ public Movie(int movie_Id, int theater_Id, String movie_Name, String movie_Direc
 		this.movie_Description = movie_Description;
 	}
 	
-	public Blob getMovie_Poster() {
+	public String getMovie_Poster() {
 		return movie_Poster;
 	}
-	public void setMovie_Poster(Blob movie_Poster) {
+	public void setMovie_Poster(String movie_Poster) {
 		this.movie_Poster = movie_Poster;
 	}
 	public String getMovie_Duration() {

@@ -38,10 +38,10 @@ public class MovieDao implements MoviesDaoIntrfc{
                 mov.setMovie_Casts(rs.getString("casts"));
                 mov.setMovie_Description(rs.getString("description"));
                 
-                Blob posterBlob = rs.getBlob("poster");
-                if (posterBlob != null) {
-                    mov.setMovie_Poster(posterBlob);
-                }
+				/*
+				 * Blob posterBlob = rs.getBlob("poster"); if (posterBlob != null) {
+				 * mov.setMovie_Poster(posterBlob); }
+				 */
                 mov.setMovie_Duration(rs.getString("duration"));
                 mov.setTrailerlink(rs.getString("trailerlink"));
                 mov.setGenre(rs.getString("genre"));
@@ -72,7 +72,7 @@ public class MovieDao implements MoviesDaoIntrfc{
 			pstmt.setDate(5, new Date(mov.getMovie_Release_Date().getTime()));
 			pstmt.setString(6, mov.getMovie_Casts());
 			pstmt.setString(7, mov.getMovie_Description());
-			pstmt.setBlob(8, mov.getMovie_Poster());
+			pstmt.setString(8, mov.getMovie_Poster());
 			pstmt.setString(9, mov.getMovie_Duration());
 			pstmt.setString(10, mov.getTrailerlink());
 			pstmt.setString(11, mov.getGenre());
