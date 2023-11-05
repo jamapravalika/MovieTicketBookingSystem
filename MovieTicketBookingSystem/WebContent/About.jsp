@@ -34,7 +34,7 @@
 					<img class="img-fluid" src="assets/images/banner1.jpg">
 				</div>
 				<div class="col-lg-6 ab-left pl-lg-4 mt-lg-0 mt-5">
-					<h3 class="hny-title">Movie Ticket Reservation System</h3>
+					<h3 class="hny-title" Style="color:#b75858;;">Movie Ticket Reservation System</h3>
 					<p class="mt-3">It is an online ticket booking platform to book tickets for movies playing in theaters near you to buy tickets for movies released today at your desired location. You can book movie tickets by searching for movies or movie tickets in the product search bar or clicking Movies & Travel tickets option.</p>
 				</div>
 			</div>

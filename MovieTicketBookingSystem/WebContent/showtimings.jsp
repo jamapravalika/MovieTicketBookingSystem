@@ -1,20 +1,13 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
-
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-        <link rel="stylesheet" type="text/css" href="AddMovies.css">
-
-    
-    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
-    <title>Document</title>
-    <style type="text/css">
-    
-    </style>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
 </head>
 <body>
-    <nav>
+ <nav>
       <ul>
         <li><a href="AdmHome.jsp"><i class="fa fa-home"></i> Home</a></li>
         <li><a href="AddMovies.jsp"><i class="fa fa-film"></i> Add Movies</a></li>
@@ -27,7 +20,7 @@
         <h2>Movies</h2>
         <a>
         <div class="container">
-            <h2 style="text-align: center; padding: 0">Add Movie</h2>
+            <h2 style="text-align: center; padding: 0">Add Show Timings</h2>
             <br>
         </br>
             <!-- Add Movie Form -->
@@ -35,19 +28,14 @@
     <!-- Existing fields -->
     <div class="form-group">
         <label for="movieImage">Movie Poster:</label>
-        <input type="file" class="form-control" id="movieImage" name="movieImage" accept="image/*" required>
+        <input type="time" class="form-control" id="movieImage" name="movieImage" accept="image/*" required>
     </div>
     <div class="form-group">
         <label for="movieName">Movie Name:</label>
         <input type="text" class="form-control" id="movieName" name="movieName" required>
     </div>
     
-    
 
-    <!-- Additional fields -->
-    
-    
-    
     <div class="for">
     <div class="form-group">
         <label for="releasedate">Release Date:</label>
@@ -67,29 +55,17 @@
         <label for="duration">Duration (minutes):</label>
         <input type="number" class="form-control" id="duration" name="duration" required>
     </div>
-    <div class="form-group">
-        <label for="genre">Genre:</label>
-        <input type="text" class="form-control" id="genre" name="genre" required>
-    </div>
-    </div>
-    <div class="form-group">
-        <label for="trailerlink">Trailer Link:</label>
-        <input type="url" class="form-control" id="trailerlink" name="trailerlink" required>
-    </div>
-    <div class="form-group">
-    	<label for="description">Description:</label>
-    	<textarea class="form-control" id="description" name="description" required rows="6"></textarea>
-	</div>
+ 
     <div class="buttons">
         <br>
-        <button type="submit" class="btn btn-primary">Add Movie</button>
+        <button type="submit" class="btn btn-primary">Add Show Times</button>
     </div>
 </form>
 
-        </div>
+</div>
 </a>
     
-    </section>
+</section>
     
 </body>
 </html>

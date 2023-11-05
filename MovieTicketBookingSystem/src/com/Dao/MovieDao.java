@@ -16,8 +16,7 @@ public class MovieDao implements MoviesDaoIntrfc{
 	private static final String Insert_QUERY = "Insert into movies (movieId,theaterId,movie_name,director,releasedate,casts,description,poster,duration,trailerlink,genre) values(?,?,?,?,?,?,?,?,?,?,?)";
 	
 	Connection con=DbConnection.getConnection();
-	
-	
+
 	@Override
 	public List<Movie> getAllMovies() {
 		
@@ -26,6 +25,7 @@ public class MovieDao implements MoviesDaoIntrfc{
         	
             PreparedStatement pstmt = con.prepareStatement(Select_QUERY);
             ResultSet rs = pstmt.executeQuery();
+            
             Movie mov = null;
 
             while (rs.next()) {
@@ -37,7 +37,7 @@ public class MovieDao implements MoviesDaoIntrfc{
                 mov.setMovie_Release_Date(rs.getDate("releasedate"));
                 mov.setMovie_Casts(rs.getString("casts"));
                 mov.setMovie_Description(rs.getString("description"));
-                
+                mov.setMovie_Poster(rs.getString("poster"));
 				/*
 				 * Blob posterBlob = rs.getBlob("poster"); if (posterBlob != null) {
 				 * mov.setMovie_Poster(posterBlob); }

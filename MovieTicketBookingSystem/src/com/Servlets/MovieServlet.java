@@ -21,103 +21,107 @@ import com.Dao.MovieDao;
 import com.Db.DbConnection;
 import com.Model.Movie;
 
-@MultipartConfig
 @WebServlet("/MoviesPage")
+@MultipartConfig
 public class MovieServlet extends HttpServlet {
-	private static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = 1L;
        
-    /**
-     * @see HttpServlet#HttpServlet()
-     */
     public MovieServlet() {
         super();
-        // TODO Auto-generated constructor stub
     }
 
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		MovieDao movieDao = new MovieDao();
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        MovieDao movieDao = new MovieDao();
 
-	    List<Movie> movies = movieDao.getAllMovies();
-	    
-	    request.setAttribute("movies", movies);
-	    RequestDispatcher dispatcher = request.getRequestDispatcher("MoviesPage.jsp");
-	    dispatcher.forward(request, response);	
-	}
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		doGet(request, response);
-		
-		System.out.println("in post");
-		Part file =request.getPart("movieImage");
-		
-		String imageFileName=file.getSubmittedFileName();
-		System.out.println(imageFileName);
-		
-		String uploadPath="C:/Users/Pravalika/git/MovieTicketBookingSystem/MovieTicketBookingSystem/images/"+imageFileName;
-		System.out.println(uploadPath);
-		
-		
-		try {
-		FileOutputStream fos=new FileOutputStream(uploadPath);
-		InputStream is=file.getInputStream();
-		
-		byte[] data=new byte[is.available()];
-		is.read(data);
-		fos.write(data);
-		fos.close();
-		}
-		catch(Exception e) {
-			e.printStackTrace();
-		}
-		Connection conn = DbConnection.getConnection();
-		PreparedStatement pstmt = null;
-		String Insert_QUERY = "INSERT INTO movies (theaterId, movie_name, director, releasedate, casts, description, poster, duration, trailerlink, genre) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+        List<Movie> movies = movieDao.getAllMovies();
+       
+        request.setAttribute("movies", movies);
+        RequestDispatcher dispatcher = request.getRequestDispatcher("MoviesPage.jsp");
+        dispatcher.forward(request, response);
+    }
 
-		int theaterId = 1; // Replace with your theater ID or get it from the request
-		String movieName = request.getParameter("movieName");
-		String director = request.getParameter("director");
-		String releasedate = request.getParameter("releasedate"); // Make sure to retrieve this from your form
-		String casts = request.getParameter("casts");
-		String description = request.getParameter("description");
-		String duration = request.getParameter("duration");
-		String trailerlink = request.getParameter("trailerlink");
-		String genre = request.getParameter("genre");
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        System.out.println("in post");
+        Part file = request.getPart("movieImage");
+        
+        String imageFileName = getSubmittedFileName(file);
+        System.out.println(imageFileName);
+        
+        String uploadPath = "C:/Users/Pravalika/git/MovieTicketBookingSystem/MovieTicketBookingSystem/images/" + imageFileName;
+        System.out.println(uploadPath);
+        
+        try {
+            FileOutputStream fos = new FileOutputStream(uploadPath);
+            InputStream is = file.getInputStream();
+            
+            byte[] data = new byte[is.available()];
+            is.read(data);
+            fos.write(data);
+            fos.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        
+        Connection conn = DbConnection.getConnection();
+        PreparedStatement pstmt = null;
+        String insertQuery = "INSERT INTO movies (theaterId, movie_name, director, releasedate, casts, description, poster, duration, trailerlink, genre) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 
-		try {
-		    pstmt = conn.prepareStatement(Insert_QUERY);
-		    pstmt.setInt(1, theaterId);
-		    pstmt.setString(2, movieName);
-		    pstmt.setString(3, director);
-		    pstmt.setString(4, releasedate);
-		    pstmt.setString(5, casts);
-		    pstmt.setString(6, description);
-		    pstmt.setString(7, imageFileName);
-		    pstmt.setString(8, duration);
-		    pstmt.setString(9, trailerlink);
-		    pstmt.setString(10, genre);
+        int theaterId = 1; // Replace with your theater ID or get it from the request
+        String movieName = request.getParameter("movieName");
+        String director = request.getParameter("director");
+        String releasedate = request.getParameter("releasedate"); // Make sure to retrieve this from your form
+        String casts = request.getParameter("casts");
+        String description = request.getParameter("description");
+        String duration = request.getParameter("duration");
+        String trailerlink = request.getParameter("trailerlink");
+        String genre = request.getParameter("genre");
 
-		    int row = pstmt.executeUpdate();
+        try {
+            pstmt = conn.prepareStatement(insertQuery);
+            pstmt.setInt(1, theaterId);
+            pstmt.setString(2, movieName);
+            pstmt.setString(3, director);
+            pstmt.setString(4, releasedate);
+            pstmt.setString(5, casts);
+            pstmt.setString(6, description);
+            pstmt.setString(7, imageFileName);
+            pstmt.setString(8, duration);
+            pstmt.setString(9, trailerlink);
+            pstmt.setString(10, genre);
 
-		    conn.commit();
+            int row = pstmt.executeUpdate();
 
-		    if (row > 0) {
-		        System.out.println("Image path added successfully");
-		    } else {
-		        System.out.println("Failed to add image path");
-		    }
-		} catch (Exception e) {
-		    e.printStackTrace();
-		} finally {
-		    try {
-		        if (pstmt != null) {
-		            pstmt.close();
-		        }
-		        if (conn != null) {
-		            conn.close();
-		        }
-		    } catch (SQLException e) {
-		        e.printStackTrace();
-		    }
-		}
-	}
+            conn.commit();
+
+            if (row > 0) {
+                System.out.println("Image path added successfully");
+            } else {
+                System.out.println("Failed to add image path");
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                if (pstmt != null) {
+                    pstmt.close();
+                }
+                if (conn != null) {
+                    conn.close();
+                }
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+
+        response.sendRedirect("success.jsp");
+    }
+    
+    private String getSubmittedFileName(Part part) {
+        for (String content : part.getHeader("content-disposition").split(";")) {
+            if (content.trim().startsWith("file")) {
+                return content.substring(content.indexOf('=') + 1).trim().replace("\"", "");
+            }
+        }
+        return null;
+    }
 }

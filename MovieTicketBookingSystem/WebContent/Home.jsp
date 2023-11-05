@@ -39,6 +39,9 @@
         <li class="nav-item">
           <a class="nav-link" href="/MovieTicketBookingSystem/MoviesPage"><i class="fa-solid fa-video"></i> Movies</a>
         </li>
+       <!--  <li class="nav-item">
+          <a class="nav-link" href="Movies.jsp"><i class="fa-solid fa-video"></i> Movies</a>
+        </li> -->
         <li class="nav-item">
           <a class="nav-link" href="About.jsp"><i class="fas fa-book"></i> About</a>
       </li>

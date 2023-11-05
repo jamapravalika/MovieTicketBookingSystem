@@ -14,7 +14,7 @@
 </head>
 <body>
 <%@ include file="Header.jsp" %>
-	<table border="1">
+	<table border="2">
         <tr>
             <th>Movie Name</th>
             <th>Director</th>
@@ -23,6 +23,8 @@
             <th>Description</th>
             <th>Duration</th>
             <th>Poster</th>
+            <th>trailer link</th> 
+             <th>genre</th>
         </tr>
         
         <% List<Movie> movies = (List<Movie>) request.getAttribute("movies");
@@ -33,9 +35,14 @@
             <td><%= movie.getMovie_Director() %></td>
             <td><%= movie.getMovie_Release_Date() %></td>
             <td><%= movie.getMovie_Casts() %></td>
-            <td><%= movie.getMovie_Description() %></td>
+            <td><%= movie.getMovie_Description() %></td> 
             <td><%= movie.getMovie_Duration() %> min</td>
-            
+            <td><img src="C:/Users/Pravalika/git/MovieTicketBookingSystem/MovieTicketBookingSystem/images/<%= movie.getMovie_Poster() %>" alt="Movie Poster" /></td>
+
+            <td><%= movie.getTrailerlink() %> min</td>
+            <td><%= movie.getGenre() %> min</td>
+            <td><%= movie.getMovie_Poster() %></td>
+
            <%--  <td><img src="data:image/jpeg;base64, <%= Base64.getEncoder().encodeToString(movie.getMovie_Poster()) %>" alt="Movie Poster" /></td>         			
             <td><%= movie.getMovie_Duration() %></td>
             <%
