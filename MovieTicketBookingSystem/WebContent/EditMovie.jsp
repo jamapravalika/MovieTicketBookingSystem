@@ -14,7 +14,7 @@
 </head>
 <body>
 	<div class="container">
-        <form enctype="multipart/form-data" action="update_movie" method="post">
+        <form enctype="multipart/form-data" action="Update_movieServlet" method="post">
             <!-- Existing fields -->
             <div class="form-group">
                 <label for="movieImage">Movie Poster:</label>
@@ -22,7 +22,7 @@
             </div>
             <div class="form-group">
                 <label for="movieName">Movie Name:</label>
-                <input type="text" class="form-control" id="movieName" name="movieName" value="<%= movie.getMovie_Name() %>" required>
+                <input type="text" class="form-control" id="movieName" name="movieName" value="<%-- <%= movie.getMovie_Name() %> --%>" required>
             </div>
         
             <!-- Additional fields -->
@@ -55,7 +55,7 @@
                 <textarea class="form-control" id="description" name="description" rows="6" required></textarea>
             </div>
             <!-- Movie ID (hidden field) -->
-            <input type="hidden" id="movieID" name="movieID" value="<%= movie.getMovie_Id() %>"> <!-- Replace with the actual movie ID -->
+            <input type="hidden" id="movieID" name="movieID" value="<%-- <%= movie.getMovie_Id() %> --%>"> <!-- Replace with the actual movie ID -->
             <div class="buttons">
                 <br>
                 <button type="submit" class="btn btn-primary">Update Movie</button>

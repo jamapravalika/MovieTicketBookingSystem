@@ -5,6 +5,7 @@ import java.sql.Blob;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 import com.Db.DbConnection;
@@ -14,7 +15,8 @@ import com.Model.Theater;
 public class MovieDao implements MoviesDaoIntrfc{
 	private static final String Select_QUERY = "Select * from movies";
 	private static final String Insert_QUERY = "Insert into movies (movieId,theaterId,movie_name,director,releasedate,casts,description,poster,duration,trailerlink,genre) values(?,?,?,?,?,?,?,?,?,?,?)";
-	
+	private static final String Update_QUERY = "UPDATE movies SET movie_name = ?, director = ?, relasedate = ?, casts = ?, description = ?, duration = ?, trailerlink = ?, genre = ? WHERE movieId = ?";
+	private static final String Delete_QUERY="DELETE FROM movies WHERE MovieId = ?";
 	Connection con=DbConnection.getConnection();
 	
 	
@@ -88,6 +90,52 @@ public class MovieDao implements MoviesDaoIntrfc{
 		}
 
 	}
+
+	@Override
+	public void UpadateMovies(Movie mov) {
+		// TODO Auto-generated method stub
+		 try {
+			  mov = new Movie();
+	            PreparedStatement pstmt = con.prepareStatement(Update_QUERY);
+	    
+				
+				pstmt.setInt(1, mov.getMovie_Id());
+	            pstmt.setInt(2, mov.getTheater_Id());
+				pstmt.setString(3, mov.getMovie_Name());
+				pstmt.setString(4, mov.getMovie_Director());
+				pstmt.setDate(5, new Date(mov.getMovie_Release_Date().getTime()));
+				pstmt.setString(6, mov.getMovie_Casts()); 
+				pstmt.setString(7, mov.getMovie_Description());
+				pstmt.setString(8, mov.getMovie_Poster());
+				pstmt.setString(9, mov.getMovie_Duration());
+				pstmt.setString(10, mov.getTrailerlink());
+				pstmt.setString(11, mov.getGenre());
+				pstmt.executeUpdate();
+	         
+	          }
+		  catch (SQLException e) {
+	            e.printStackTrace();
+	        } 
+			
+		}
+
+
+	@Override
+	public void DeleteMovies(Movie mov) {
+		// TODO Auto-generated method stub
+		try {
+			 mov = new Movie();
+			PreparedStatement pstmt = con.prepareStatement(Delete_QUERY);
+			pstmt.setInt(1,mov.getMovie_Id());
+			pstmt.executeUpdate();
+			
+		}
+		catch (SQLException e) {
+            e.printStackTrace();
+	}
+		
+	}
+
 
 	
 	
