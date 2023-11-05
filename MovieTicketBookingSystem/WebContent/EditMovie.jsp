@@ -23,7 +23,7 @@
       </ul>
     </nav>
 	<div class="container">
-        <form enctype="multipart/form-data" action="update_movie" method="post">
+        <form enctype="multipart/form-data" action="Update_movieServlet" method="post">
             <!-- Existing fields -->
             <div class="form-group">
                 <label for="movieImage">Movie Poster:</label>
