@@ -40,7 +40,7 @@
             <td><img src="images/<%= movie.getMovie_Poster() %>" alt="Movie Poster" /></td>
 
             <td><%= movie.getTrailerlink() %> min</td>
-            <td><%= movie.getGenre() %> min</td>
+            <td><%= movie.getGenre() %></td>
            
 
 	
