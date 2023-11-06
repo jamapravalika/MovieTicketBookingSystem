@@ -42,9 +42,11 @@
       <ul>
         <li><a href="AdmHome.jsp"><i class="fa fa-home"></i> Home</a></li>
         <li><a href="AddMovies.jsp"><i class="fa fa-film"></i> Add Movies</a></li>
-        <li><a href="dmovie.jsp"><i class="fa fa-film"></i> View Movies</a></li>
+        <li><a href="/MovieTicketBookingSystem/dmovie"><i class="fa fa-film"></i> View Movies</a></li>
         <li><a href="UserTable.jsp"><i class="fa fa-users"></i> Users</a></li>
         <li><a href="theater.jsp"><i class="fa fa-building"></i> Theaters</a></li>
+        <li><a href="showtimings.jsp"><i class="fa fa-building"></i> show Timings</a></li>
+        <li><a href="Seats.jsp"><i class="fa fa-building"></i> Seats</a></li>
       </ul>
     </nav>
     

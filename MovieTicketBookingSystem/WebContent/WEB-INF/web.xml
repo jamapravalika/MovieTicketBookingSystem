@@ -20,5 +20,15 @@
     <url-pattern>/MovieServlet</url-pattern>
 </servlet-mapping>
 
+<!-- <servlet>
+    <servlet-name>SeatsServlet</servlet-name>
+    <servlet-class>com.Servlets.SeatsServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>SeatsServlet</servlet-name>
+    <url-pattern>/SeatsServlet</url-pattern>
+</servlet-mapping> -->
+
 
 </web-app>

@@ -54,17 +54,13 @@ public class DisplayMovies extends HttpServlet {
 	    RequestDispatcher dispatcher = request.getRequestDispatcher("dmovie.jsp");
 	    dispatcher.forward(request, response);	
 	    
-	    try {
-			stmt = con.createStatement();
-			ResultSet rs = stmt.executeQuery(Select_QUERY);
-			
-			while(rs.next()) {
-				imageFileName=rs.getString("poster");
-			}
-		} catch (SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		/*
+		 * try { stmt = con.createStatement(); ResultSet rs =
+		 * stmt.executeQuery(Select_QUERY);
+		 * 
+		 * while(rs.next()) { imageFileName=rs.getString("poster"); } } catch
+		 * (SQLException e) { // TODO Auto-generated catch block e.printStackTrace(); }
+		 */
 	    
 	}
 

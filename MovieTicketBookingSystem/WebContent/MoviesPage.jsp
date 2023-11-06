@@ -37,11 +37,11 @@
             <td><%= movie.getMovie_Casts() %></td>
             <td><%= movie.getMovie_Description() %></td> 
             <td><%= movie.getMovie_Duration() %> min</td>
-            <td><img src="../images/<%= movie.getMovie_Poster() %>" alt="Movie Poster" /></td>
+            <td><img src="images/<%= movie.getMovie_Poster() %>" alt="Movie Poster" /></td>
 
             <td><%= movie.getTrailerlink() %> min</td>
             <td><%= movie.getGenre() %> min</td>
-           <td><img src="images/<%= movie.getMovie_Poster() %>" alt="Movie Poster" /></td>
+           
 
 	
            <%--  <td><img src="data:image/jpeg;base64, <%= Base64.getEncoder().encodeToString(movie.getMovie_Poster()) %>" alt="Movie Poster" /></td>         			

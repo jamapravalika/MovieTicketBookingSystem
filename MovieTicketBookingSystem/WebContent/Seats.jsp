@@ -8,7 +8,7 @@
 <link rel="stylesheet" type="text/css" href="AddMovies.css">
 </head>
 <body>
-  <nav>
+ <nav>
       <ul>
         <li><a href="AdmHome.jsp"><i class="fa fa-home"></i> Home</a></li>
         <li><a href="AddMovies.jsp"><i class="fa fa-film"></i> Add Movies</a></li>
@@ -27,40 +27,26 @@
             <br>
         </br>
             <!-- Add Movie Form -->
-<form enctype="multipart/form-data" action="MovieServlet" method="post">
-    <!-- Existing fields -->
-    
-    <div class="form-group">
-        <label for="movieId">Movie Id</label>
-        <input type="text" class="form-control" id="movieName" name="movieName" required>
-    </div>
-    
+ <form action="SeatsServlet" method="post">
+        <label for="movieId">Movie ID:</label>
+        <input type="text" id="movieId" name="movieId" required><br><br>
 
-    <div class="for">
-    <div class="form-group">
-        <label for="startTime">startTime</label>
-        <input type="date" class="form-control" id="releasedate" name="releasedate" required>
-    </div>
-    <div class="form-group">
-        <label for="endTime">endTime:</label>
-        <input type="text" class="form-control" id="director" name="director" required>
-    </div>
-    </div>
-    <div class="form-group">
-        <label for="theaterId">Theater Id:</label>
-        <input type="text" class="form-control" id="casts" name="casts" required>
-    </div>
-    
- 
-    <div class="buttons">
-        <br>
-        <button type="submit" class="btn btn-primary">Add Show Times</button>
-    </div>
-</form>
+        <label for="seatNumber">Seat Number:</label>
+        <input type="text" id="seatNumber" name="seatNumber" required><br><br>
+
+        <label for="price">Price:</label>
+        <input type="text" id="price" name="price" required><br><br>
+
+        <label for="isBooked">Is Booked:</label>
+        <input type="checkbox" id="isBooked" name="isBooked"><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
 
 </div>
-</a>
+
     
+   
 </section>
     
 </body>
