@@ -3,6 +3,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <link rel="stylesheet" type="text/css" href="UserTable.css">
     <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
     <title>Users</title>

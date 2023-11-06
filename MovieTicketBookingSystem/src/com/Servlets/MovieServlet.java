@@ -47,7 +47,13 @@ public class MovieServlet extends HttpServlet {
         String imageFileName = getSubmittedFileName(file);
         System.out.println(imageFileName);
         
-        String uploadPath = "C:/Users/Pravalika/git/MovieTicketBookingSystem/MovieTicketBookingSystem/images/" + imageFileName;
+		/*
+		 * String uploadPath =
+		 * "C:/Users/Pravalika/git/MovieTicketBookingSystem/MovieTicketBookingSystem/images/"
+		 * + imageFileName;
+		 */
+        
+        String uploadPath =request.getRealPath("images");
         System.out.println(uploadPath);
         
         try {
@@ -113,7 +119,7 @@ public class MovieServlet extends HttpServlet {
             }
         }
 
-        response.sendRedirect("success.jsp");
+        response.sendRedirect("/MovieTicketBookingSystem/MoviesPage");
     }
     
     private String getSubmittedFileName(Part part) {

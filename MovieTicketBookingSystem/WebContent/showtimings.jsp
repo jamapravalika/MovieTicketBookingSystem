@@ -17,7 +17,7 @@
       </ul>
     </nav>
     <section id="movies">
-        <h2>Movies</h2>
+        <h2>Show Timings</h2>
         <a>
         <div class="container">
             <h2 style="text-align: center; padding: 0">Add Show Timings</h2>
@@ -26,35 +26,28 @@
             <!-- Add Movie Form -->
 <form enctype="multipart/form-data" action="MovieServlet" method="post">
     <!-- Existing fields -->
+    
     <div class="form-group">
-        <label for="movieImage">Movie Poster:</label>
-        <input type="time" class="form-control" id="movieImage" name="movieImage" accept="image/*" required>
-    </div>
-    <div class="form-group">
-        <label for="movieName">Movie Name:</label>
+        <label for="movieId">Movie Id</label>
         <input type="text" class="form-control" id="movieName" name="movieName" required>
     </div>
     
 
     <div class="for">
     <div class="form-group">
-        <label for="releasedate">Release Date:</label>
+        <label for="startTime">startTime</label>
         <input type="date" class="form-control" id="releasedate" name="releasedate" required>
     </div>
     <div class="form-group">
-        <label for="director">Director:</label>
+        <label for="endTime">endTime:</label>
         <input type="text" class="form-control" id="director" name="director" required>
     </div>
     </div>
     <div class="form-group">
-        <label for="casts">Casts:</label>
+        <label for="theaterId">Theater Id:</label>
         <input type="text" class="form-control" id="casts" name="casts" required>
     </div>
-    <div class="col-6">
-    <div class="form-group">
-        <label for="duration">Duration (minutes):</label>
-        <input type="number" class="form-control" id="duration" name="duration" required>
-    </div>
+    
  
     <div class="buttons">
         <br>
