@@ -42,7 +42,7 @@
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"><i class="fas fa-user"></i> Account</a>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="#">Account</a></li>
-            <li><a class="dropdown-item" href="/MovieTicketBookingSystem/Booking">History</a></li>
+            <li><a class="dropdown-item" href="/MovieTicketBookingSystem/booking">History</a></li>
             <li><a class="dropdown-item" href="login.jsp">Logout</a></li>
           </ul>
         </li>

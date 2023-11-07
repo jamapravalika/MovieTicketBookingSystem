@@ -7,7 +7,6 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.sql.Time;
-import java.sql.Timestamp;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -19,36 +18,55 @@ import com.Model.Bookings;
 public class BookingDAO implements BookingDAOIntr {
 
 	@Override
-	public void createBooking(int BookingId, int UserId, String MovieName, Time ShowTime, float TotalPrice,
+	public void CreateBooking(int BookingId, int UserId, String MovieName, Time ShowTime, float TotalPrice,
 			Date BookingDate) {
-		Connection conn = DbConnection.getConnection();
-        final String INSERT_QUERY = "INSERT INTO BOOKINGS (BOOKINGID, USERID, MOVIE_NAME, SHOWTIME, TOTAL_PRICE, BOOKING_DATE, CONFIRMED) VALUES (?, ?, ?, ?, ?, ?, ?);";
+	        Connection conn = DbConnection.getConnection();
 
-        try (PreparedStatement pstmt = conn.prepareStatement(INSERT_QUERY)) {
-            pstmt.setInt(1, BookingId);
-            pstmt.setInt(2, UserId);
-            pstmt.setString(3, MovieName);
-            pstmt.setTime(4, ShowTime);
-            pstmt.setFloat(5, TotalPrice);
-            pstmt.setTimestamp(6, new Timestamp(BookingDate.getTime()));
-            pstmt.setBoolean(7, false);
+	        // Define SQL queries to retrieve data from other tables
+	        String getUserQuery = "SELECT UserId FROM users WHERE UserId = ?";
+	        String getMovieQuery = "SELECT MovieName FROM movies WHERE MovieName = ?";
+	        String getShowtimeQuery = "SELECT ShowTime FROM showtimes WHERE ShowTime = ?";
 
-            int rowsAffected = pstmt.executeUpdate();
-            if (rowsAffected > 0) {
-                System.out.println("Booking created successfully");
-            } else {
-                System.out.println("Failed to create the booking");
-            }
-        } catch (SQLException e) {
-            e.printStackTrace();
-        } finally {
-            System.out.println("Finally Block");
-        }
+	        try (PreparedStatement getUserPstmt = conn.prepareStatement(getUserQuery);
+	             PreparedStatement getMoviePstmt = conn.prepareStatement(getMovieQuery);
+	             PreparedStatement getShowtimePstmt = conn.prepareStatement(getShowtimeQuery);
+	             PreparedStatement insertBookingPstmt = conn.prepareStatement(
+	                     "INSERT INTO BOOKINGS (USERID, MOVIE_NAME, SHOWTIME, TOTAL_PRICE, CONFIRMED) VALUES (?, ?, ?, ?, ?)");
+	        ) {
+	            getUserPstmt.setInt(1, UserId);
+	            getMoviePstmt.setString(1, MovieName);
+	            getShowtimePstmt.setTime(1, ShowTime);
+
+	            ResultSet userResult = getUserPstmt.executeQuery();
+	            ResultSet movieResult = getMoviePstmt.executeQuery();
+	            ResultSet showtimeResult = getShowtimePstmt.executeQuery();
+
+	            if (userResult.next() && movieResult.next() && showtimeResult.next()) {
+	                insertBookingPstmt.setInt(1, UserId);
+	                insertBookingPstmt.setString(2, MovieName);
+	                insertBookingPstmt.setTime(3, ShowTime);
+	                insertBookingPstmt.setFloat(4, TotalPrice);
+	                insertBookingPstmt.setBoolean(5, false);
+
+	                int rowsAffected = insertBookingPstmt.executeUpdate();
+	                if (rowsAffected > 0) {
+	                    System.out.println("Booking created successfully");
+	                } else {
+	                    System.out.println("Failed to create the booking");
+	                }
+	            } else {
+	                System.out.println("User, movie, or showtime not found.");
+	            }
+	        } catch (SQLException e) {
+	            e.printStackTrace();
+	        } finally {
+	            System.out.println("Finally Block");
+	        }
+	   }
 		
-	}
 
 	@Override
-	public boolean confirmBooking(int Booking_Id) {
+	public boolean ConfirmBooking(int Booking_Id) {
 		Connection conn = DbConnection.getConnection();
         final String UPDATE_QUERY = "UPDATE BOOKINGS SET CONFIRMED = ? WHERE BOOKINGID = ?;";
         try {
@@ -70,7 +88,7 @@ public class BookingDAO implements BookingDAOIntr {
 	}
 
 	@Override
-	public void deleteBooking(int Booking_Id) {
+	public void DeleteBooking(int Booking_Id) {
 		Connection conn = DbConnection.getConnection();
         final String QUERY = "DELETE FROM BOOKINGS WHERE BOOKINGID = ?;";
         try {

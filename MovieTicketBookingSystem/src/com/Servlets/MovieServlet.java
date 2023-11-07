@@ -49,7 +49,7 @@ public class MovieServlet extends HttpServlet {
         
 	
 		 String uploadPath =
-		 "C:/Users/Pravalika/git/MovieTicketBookingSystem/MovieTicketBookingSystem/WebContent/images/"
+		"C:/Users/pssim/git/MovieTicketBookingSystem/MovieTicketBookingSystem/WebContent/images/"
 		 + imageFileName;
 		 
         

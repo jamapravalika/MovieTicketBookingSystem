@@ -9,7 +9,9 @@
     <title>Booked Movie Tickets</title>
 </head>
 <body>
+<%@ include file="Header.jsp" %>
     <h1>Booked Movie Tickets</h1>
+    
     <table border="1">
         <tr>
             <th>Booking ID</th>
@@ -20,17 +22,33 @@
             <th>Booking Date</th>
             <th>Confirmed</th>
         </tr>
-        <% for (Bookings booking : (List<Bookings>) request.getAttribute("bookings")) { %>
-            <tr>
-                <td><%= booking.getBookingId() %></td>
-                <td><%= booking.getUserId() %></td>
-                <td><%= booking.getMovieName() %></td>
-                <td><%= booking.getShowTime() %></td>
-                <td><%= booking.getTotalPrice() %></td>
-                <td><%= booking.getBookingDate() %></td>
-                <td><%= booking.isConfirmed() %></td>
-            </tr>
-        <% } %>
+
+        <%
+            // Retrieve the bookings attribute set in the servlet
+            List<Bookings> bookings = (List<Bookings>) request.getAttribute("bookings");
+            if (bookings != null && !bookings.isEmpty()) {
+                for (Bookings booking : bookings) {
+        %>
+                <tr>
+                    <td><%= booking.getBookingId() %></td>
+                    <td><%= booking.getUserId() %></td>
+                    <td><%= booking.getMovieName() %></td>
+                    <td><%= booking.getShowTime() %></td>
+                    <td><%= booking.getTotalPrice() %></td>
+                    <td><%= booking.getBookingDate() %></td>
+                    <td><%= booking.isConfirmed() %></td>
+                </tr>
+        <%
+                }
+            } else {
+        %>
+                <tr>
+                    <td colspan="7">No bookings found.</td>
+                </tr>
+        <%
+            }
+        %>
     </table>
+   <%@ include file="footer.html" %>
 </body>
 </html>
